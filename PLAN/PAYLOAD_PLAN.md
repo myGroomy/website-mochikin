@@ -215,3 +215,15 @@ Gotcha yang ditemukan ( undocumented):
 6. `/admin` shell 200 meski DB belum tersambung (PPR shell); error DB hanya muncul saat
    API admin dipanggil. Segera setelah `DATABASE_URI` Supabase asli diisi, jalankan
    `npx payload migrate --disable-transpile` untuk push schema.
+
+---
+
+## Catatan Implementasi Fase 2–3 (sudah dijalankan)
+
+- Type field versi Payload 3 = `richText` (camelCase), bukan `richtext` ala v2 — error muncul saat `next build`.
+- Field `icon` (emoji) harus `maxLength` ≥ 20: emoji keluarga `👨‍👩‍👧‍👦` adalah ZWJ-sequence melebihi 10 unit UTF-16.
+- Jumlah menu aktual = **34 item unik + 5 favorit** (angka 62 di tabel rencana ini sudah usang pasca-rebranding).
+- Field baru `imageCard` di `menu-items`: foto kartu "Menu Favorit" beranda yang berbeda dengan foto kanonik halaman /menu (kualitas data FAVORITE_MENU vs ALL_MENU_ITEMS memang berbeda untuk produk yang sama).
+- Seeder idempotent: dokumen yang SUDAH ADA menang (tidak ditimpa selain field seed yang konvergen); globals hanya diisi bila masih kosong. Jalankan ulang = aman.
+- Skrip seed pakai antarmuka `db` longgar — tipe generik `payload.create/find/update` terlalu ketat untuk literal hasil `src/data/*`; validasi tetap jalan di runtime.
+- Koneksi Supabase lokal dev: `?uselibpqcompat=true&sslmode=require` (Session pooler 5432) tanpa `SELF_SIGNED_CERT_IN_CHAIN`.

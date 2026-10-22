@@ -31,6 +31,15 @@ export const MenuItems: CollectionConfig = {
       required: true,
     },
     {
+      name: 'imageCard',
+      type: 'upload',
+      label: 'Foto Kartu Favorit (opsional)',
+      relationTo: 'media',
+      admin: {
+        description: 'Foto alternatif untuk kartu "Menu Favorit" di beranda, bila berbeda dengan foto halaman menu',
+      },
+    },
+    {
       name: 'description',
       type: 'textarea',
       label: 'Deskripsi',

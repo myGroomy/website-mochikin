@@ -32,7 +32,7 @@ export const KomitmenGlobal: GlobalConfig = {
           name: 'icon',
           type: 'text',
           label: 'Emoji Ikon',
-          maxLength: 10,
+          maxLength: 20,
           admin: {
             description: 'Mis. 🥇 — fallback: ikon bawaan UI',
           },

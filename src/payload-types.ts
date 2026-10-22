@@ -230,6 +230,10 @@ export interface MenuItem {
   name: string;
   menuCategory: number | MenuCategory;
   image: number | Media;
+  /**
+   * Foto alternatif untuk kartu "Menu Favorit" di beranda, bila berbeda dengan foto halaman menu
+   */
+  imageCard?: (number | null) | Media;
   description: string;
   price?: string | null;
   calories?: string | null;
@@ -293,6 +297,21 @@ export interface News {
   date: string;
   image: number | Media;
   excerpt: string;
+  body: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -529,6 +548,7 @@ export interface MenuItemsSelect<T extends boolean = true> {
   name?: T;
   menuCategory?: T;
   image?: T;
+  imageCard?: T;
   description?: T;
   price?: T;
   calories?: T;

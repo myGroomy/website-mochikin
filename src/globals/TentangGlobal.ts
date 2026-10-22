@@ -74,7 +74,7 @@ export const TentangGlobal: GlobalConfig = {
           name: 'icon',
           type: 'text',
           label: 'Emoji Ikon',
-          maxLength: 10,
+          maxLength: 20,
           admin: {
             description: 'Mis. 💛 — fallback: ikon bawaan UI',
           },
@@ -92,7 +92,7 @@ export const TentangGlobal: GlobalConfig = {
           type: 'text',
           label: 'Tahun',
           required: true,
-          maxLength: 10,
+          maxLength: 20,
         },
         {
           name: 'title',
