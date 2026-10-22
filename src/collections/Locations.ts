@@ -1,5 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
+
 export const Locations: CollectionConfig = {
   slug: 'locations',
   admin: {
@@ -58,7 +59,11 @@ export const Locations: CollectionConfig = {
           maxLength: 60,
         },
       ],
-    },
+  hooks: {
+    afterChange: [() => {}],
+
+  },
+},
     {
       name: 'order',
       type: 'number',

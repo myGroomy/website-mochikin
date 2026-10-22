@@ -73,6 +73,9 @@ export const KarierGlobal: GlobalConfig = {
       label: 'Email HR (tujuan lamaran)',
     },
   ],
-}
+  hooks: {
+    afterChange: [() => {}],
 
+  },
+}
 export default KarierGlobal

@@ -145,6 +145,9 @@ export const TentangGlobal: GlobalConfig = {
       maxLength: 800,
     },
   ],
-}
+  hooks: {
+    afterChange: [() => {}],
 
+  },
+}
 export default TentangGlobal

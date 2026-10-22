@@ -3,6 +3,7 @@ import { fileURLToPath } from 'url'
 
 import type { CollectionConfig } from 'payload'
 
+
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
@@ -44,6 +45,10 @@ export const Media: CollectionConfig = {
       label: 'Alt Text (deskripsi gambar untuk SEO & aksesibilitas)',
     },
   ],
+  hooks: {
+    afterChange: [() => {}],
+
+  },
 }
 
 export default Media

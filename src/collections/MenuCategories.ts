@@ -1,5 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
+
 export const MenuCategories: CollectionConfig = {
   slug: 'menu-categories',
   admin: {
@@ -26,6 +27,10 @@ export const MenuCategories: CollectionConfig = {
       },
     },
   ],
+  hooks: {
+    afterChange: [() => {}],
+
+  },
 }
 
 export default MenuCategories

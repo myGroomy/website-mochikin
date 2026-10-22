@@ -1,5 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
+
 export const Jobs: CollectionConfig = {
   slug: 'jobs',
   admin: {
@@ -84,7 +85,11 @@ export const Jobs: CollectionConfig = {
           maxLength: 300,
         },
       ],
-    },
+  hooks: {
+    afterChange: [() => {}],
+
+  },
+},
     {
       name: 'qualifications',
       type: 'array',

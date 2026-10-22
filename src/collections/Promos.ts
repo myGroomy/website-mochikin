@@ -1,5 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
+
 export const Promos: CollectionConfig = {
   slug: 'promos',
   admin: {
@@ -61,6 +62,10 @@ export const Promos: CollectionConfig = {
       },
     },
   ],
+  hooks: {
+    afterChange: [() => {}],
+
+  },
 }
 
 export default Promos

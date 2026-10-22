@@ -7,19 +7,25 @@ import AppSection from "@/components/AppSection";
 import InstagramFeed from "@/components/InstagramFeed";
 import CareerBanner from "@/components/CareerBanner";
 import Link from "next/link";
-import Image from "next/image";
+import { getHeroBanners, getPromos, getFeaturedMenuItems } from "@/lib/cms";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const [banners, promos, favorites] = await Promise.all([
+    getHeroBanners(),
+    getPromos(),
+    getFeaturedMenuItems(),
+  ]);
+
   return (
     <div className="flex flex-col">
       {/* 1. Hero Carousel */}
-      <HeroCarousel />
+      <HeroCarousel banners={banners} />
 
       {/* 2. Promo Menarik */}
-      <PromoSection />
+      <PromoSection promos={promos} />
 
       {/* 3. Menu Favorit */}
-      <MenuSection />
+      <MenuSection items={favorites} />
 
       {/* 4. Mochikin Rewards Banner Section */}
       <section className="relative w-full overflow-hidden bg-amber-500">

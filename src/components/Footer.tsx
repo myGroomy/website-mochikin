@@ -4,8 +4,23 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Send, CheckCircle2 } from "lucide-react";
+import type { SiteSocials } from "@/lib/cms";
 
-export default function Footer() {
+const SOCIAL_FALLBACK: SiteSocials = {
+  facebook: "https://www.facebook.com/MOCHIKINID",
+  twitter: "https://twitter.com/mochikin",
+  instagram: "https://instagram.com/mochikin",
+  youtube: "https://www.youtube.com/user/MOCHIKINID",
+};
+
+export default function Footer({
+  socials,
+  whatsapp,
+}: {
+  socials?: SiteSocials;
+  whatsapp?: string;
+}) {
+  const s = socials ?? SOCIAL_FALLBACK;
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
@@ -62,7 +77,7 @@ export default function Footer() {
             </h5>
             <div className="flex items-center space-x-3 mb-6">
               <a
-                href="https://www.facebook.com/MOCHIKINID"
+                href={s.facebook || SOCIAL_FALLBACK.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-gray-100 hover:bg-[#FF6B35] hover:text-white flex items-center justify-center text-sm font-bold transition-colors"
@@ -71,7 +86,7 @@ export default function Footer() {
                 fb
               </a>
               <a
-                href="https://twitter.com/mochikin"
+                href={s.twitter || SOCIAL_FALLBACK.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-gray-100 hover:bg-[#FF6B35] hover:text-white flex items-center justify-center text-sm font-bold transition-colors"
@@ -80,7 +95,7 @@ export default function Footer() {
                 𝕏
               </a>
               <a
-                href="https://instagram.com/mochikin"
+                href={s.instagram || SOCIAL_FALLBACK.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-gray-100 hover:bg-[#FF6B35] hover:text-white flex items-center justify-center text-sm font-bold transition-colors"
@@ -89,7 +104,7 @@ export default function Footer() {
                 ig
               </a>
               <a
-                href="https://www.youtube.com/user/MOCHIKINID"
+                href={s.youtube || SOCIAL_FALLBACK.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-gray-100 hover:bg-[#FF6B35] hover:text-white flex items-center justify-center text-sm font-bold transition-colors"
@@ -98,7 +113,7 @@ export default function Footer() {
                 yt
               </a>
               <a
-                href="https://wa.me/+6281110514045"
+                href={whatsapp ? `https://wa.me/${whatsapp}` : "https://wa.me/+6281110514045"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-gray-100 hover:bg-[#25D366] hover:text-white flex items-center justify-center text-sm font-bold transition-colors"

@@ -1,5 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
+
 export const HeroBanners: CollectionConfig = {
   slug: 'hero-banners',
   admin: {
@@ -45,6 +46,10 @@ export const HeroBanners: CollectionConfig = {
       defaultValue: 0,
     },
   ],
+  hooks: {
+    afterChange: [() => {}],
+
+  },
 }
 
 export default HeroBanners

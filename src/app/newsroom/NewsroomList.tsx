@@ -7,7 +7,6 @@ import { NEWS_ITEMS } from "@/data/pagesData";
 import type { NewsItem } from "@/data/pagesData";
 
 const CATEGORIES = ["Semua", "Siaran Pers", "Promo", "Event", "CSR"] as const;
-
 function NewsCard({ item }: { item: NewsItem }) {
   return (
     <article className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden flex flex-col">
@@ -33,11 +32,15 @@ function NewsCard({ item }: { item: NewsItem }) {
   );
 }
 
-export default function NewsroomList() {
+export default function NewsroomList({
+  items = NEWS_ITEMS,
+}: {
+  items?: NewsItem[];
+}) {
   const [category, setCategory] = React.useState<string>("Semua");
   const [visible, setVisible] = React.useState(6);
 
-  const filtered = NEWS_ITEMS.filter((n) => category === "Semua" || n.category === category);
+  const filtered = items.filter((n) => category === "Semua" || n.category === category);
   const featured = filtered[0];
   const rest = filtered.slice(1, visible);
 

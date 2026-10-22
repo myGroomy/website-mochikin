@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import SecurityModal from "@/components/SecurityModal";
 import FloatingOrderButton from "@/components/FloatingOrderButton";
+import { getSiteSocials, getOrderChannels, getMenuCategories } from "@/lib/cms";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
@@ -24,11 +25,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [socials, channels, categories] = await Promise.all([
+    getSiteSocials(),
+    getOrderChannels(),
+    getMenuCategories(),
+  ]);
+
   return (
     <html lang="id">
       <head>
@@ -40,9 +47,9 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col antialiased bg-white text-gray-900 selection:bg-red-600 selection:text-white">
-        <Navbar />
+        <Navbar categories={categories} />
         <main className="flex-1">{children}</main>
-        <Footer />
+        <Footer socials={socials ?? undefined} whatsapp={channels.whatsappNumber} />
         <CookieBanner />
         <SecurityModal />
         <FloatingOrderButton />

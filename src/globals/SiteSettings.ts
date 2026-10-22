@@ -109,6 +109,10 @@ export const SiteSettings: GlobalConfig = {
       ],
     },
   ],
-}
+  
+  hooks: {
+    afterChange: [() => {}],
 
+  },
+}
 export default SiteSettings

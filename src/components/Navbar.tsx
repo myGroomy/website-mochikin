@@ -6,7 +6,11 @@ import Image from "next/image";
 import { Menu as MenuIcon, X, MapPin, ChevronDown, ChevronRight, ShoppingBag } from "lucide-react";
 import { MENU_CATEGORIES } from "@/data/mochikinData";
 
-export default function Navbar() {
+export default function Navbar({
+  categories = MENU_CATEGORIES,
+}: {
+  categories?: string[];
+}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [menuDropdownOpen, setMenuDropdownOpen] = useState(false);
   const [sayangDropdownOpen, setSayangDropdownOpen] = useState(false);
@@ -57,7 +61,7 @@ export default function Navbar() {
                           Kategori Menu
                         </h4>
                         <div className="grid grid-cols-2 gap-y-2 gap-x-4">
-                          {MENU_CATEGORIES.map((cat) => (
+                          {categories.map((cat) => (
                             <Link
                               key={cat}
                               href={`/menu#${encodeURIComponent(cat)}`}

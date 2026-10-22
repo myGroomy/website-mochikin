@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { ChevronRight, Star } from "lucide-react";
 import ProductCatalog from "./ProductCatalog";
-import { ALL_MENU_ITEMS, FAVORITE_MENU } from "@/data/mochikinData";
+import { getAllMenuItems, getFeaturedMenuItems } from "@/lib/cms";
 
 export const metadata: Metadata = {
   title: "Produk Kami | MOCHIKIN",
@@ -11,9 +11,8 @@ export const metadata: Metadata = {
     "Jelajahi menu lengkap MOCHIKIN: ayam krispy Korea, topokki, burger, camilan, minuman, sampai paket keluarga. Lihat harga dan pesan lewat channel favoritmu.",
 };
 
-export default function ProdukKamiPage() {
-  const all = Object.values(ALL_MENU_ITEMS).flat();
-  const featured = FAVORITE_MENU.slice(0, 3);
+export default async function ProdukKamiPage() {
+  const [all, featured] = await Promise.all([getAllMenuItems(), getFeaturedMenuItems()]);
 
   return (
     <div className="bg-[#fafafa] min-h-screen pb-20">
@@ -57,7 +56,7 @@ export default function ProdukKamiPage() {
 
         {/* Katalog lengkap */}
         <h2 className="text-2xl font-black text-gray-900 mb-6">Semua Menu</h2>
-        <ProductCatalog />
+        <ProductCatalog items={all} />
 
         {/* Paket & promo */}
         <h2 className="text-2xl font-black text-gray-900 mt-14 mb-2">Paket &amp; Promo</h2>

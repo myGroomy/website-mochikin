@@ -3,15 +3,16 @@ import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight, ArrowRight } from "lucide-react";
-import { NEWS_ITEMS } from "@/data/pagesData";
+import { getNewsBySlug, getNewsList } from "@/lib/cms";
 
-export function generateStaticParams() {
-  return NEWS_ITEMS.map((n) => ({ slug: n.slug }));
+export async function generateStaticParams() {
+  const items = await getNewsList();
+  return items.map((n) => ({ slug: n.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const item = NEWS_ITEMS.find((n) => n.slug === slug);
+  const item = await getNewsBySlug(slug);
   if (!item) return { title: "Berita tidak ditemukan | MOCHIKIN" };
   return {
     title: `${item.title} | Newsroom MOCHIKIN`,
@@ -21,10 +22,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function NewsDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const item = NEWS_ITEMS.find((n) => n.slug === slug);
+  const item = await getNewsBySlug(slug);
   if (!item) notFound();
 
-  const related = NEWS_ITEMS.filter((n) => n.slug !== item.slug).slice(0, 3);
+  const allNews = await getNewsList();
+  const related = allNews.filter((n) => n.slug !== item.slug).slice(0, 3);
 
   return (
     <div className="bg-[#fafafa] min-h-screen pb-20">

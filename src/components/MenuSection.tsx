@@ -3,9 +3,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FAVORITE_MENU } from "@/data/mochikinData";
+import { FAVORITE_MENU, type MenuItem } from "@/data/mochikinData";
 
-export default function MenuSection() {
+export default function MenuSection({ items = FAVORITE_MENU }: { items?: MenuItem[] }) {
   return (
     <section className="py-16 bg-[#fafafa] border-y border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,7 +17,7 @@ export default function MenuSection() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-          {FAVORITE_MENU.map((item) => (
+          {items.map((item) => (
             <Link
               key={item.id}
               href={`/menu#${encodeURIComponent(item.category)}`}

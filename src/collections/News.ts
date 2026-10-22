@@ -1,5 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
+
 export const News: CollectionConfig = {
   slug: 'news',
   admin: {
@@ -41,7 +42,11 @@ export const News: CollectionConfig = {
         { label: 'Event', value: 'Event' },
         { label: 'CSR', value: 'CSR' },
       ],
-    },
+  hooks: {
+    afterChange: [() => {}],
+
+  },
+},
     {
       name: 'date',
       type: 'date',

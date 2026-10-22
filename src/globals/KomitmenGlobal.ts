@@ -133,6 +133,9 @@ export const KomitmenGlobal: GlobalConfig = {
       ],
     },
   ],
-}
+  hooks: {
+    afterChange: [() => {}],
 
+  },
+}
 export default KomitmenGlobal

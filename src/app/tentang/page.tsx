@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight, Heart, Star, Lightbulb, Rocket, ArrowRight, Briefcase } from "lucide-react";
 import { BRAND_VALUES, TIMELINE_MILESTONES, TEAM_MEMBERS } from "@/data/pagesData";
+import { getTentang } from "@/lib/cms";
 
 export const metadata: Metadata = {
   title: "Tentang Kami | MOCHIKIN",
@@ -12,7 +13,31 @@ export const metadata: Metadata = {
 
 const VALUE_ICONS = [Heart, Star, Lightbulb, Rocket];
 
-export default function TentangPage() {
+const STORY_FALLBACK = [
+  "MOCHIKIN lahir di Bandung dari obsesi sederhana: ayam crispy gaya Korea yang konsisten kriuknya dan marinasi yang meresap sampai ke tulang. Kami menggabungkan teknik Korean fried chicken dengan saus-saus otentik yang dimatangkan sendiri.",
+  "Hari ini, MOCHIKIN melayani pelanggan melalui dine-in di outlet dan channel delivery favorit — WhatsApp, GoFood, GrabFood, dan ShopeeFood.",
+];
+
+const STORY_IMAGE_FALLBACK = "/assets/produk/produk_korean-crispy-chicken_plate_01.jpg";
+
+const VISION_FALLBACK = "Menjadi brand Korean crispy chicken yang paling dicintai di Indonesia. (TODO: visi resmi)";
+
+const MISSION_FALLBACK = [
+  "Menyajikan ayam crispy dengan standar rasa dan tekstur paling konsisten.",
+  "Membuat setiap pelanggan dilayani dengan senang hati.",
+  "Tumbuh bersama komunitas dan channel pesan yang mudah diakses.",
+];
+
+export default async function TentangPage() {
+  const g = await getTentang();
+  const story = g?.story.length ? g.story : STORY_FALLBACK;
+  const storyImage = g?.storyImage || STORY_IMAGE_FALLBACK;
+  const vision = g?.vision || VISION_FALLBACK;
+  const mission = g?.mission.length ? g.mission : MISSION_FALLBACK;
+  const values = g?.values.length ? g.values : BRAND_VALUES;
+  const timeline = g?.timeline.length ? g.timeline : TIMELINE_MILESTONES;
+  const team = g?.team.length ? g.team : TEAM_MEMBERS;
+  const logoPhilosophy = g?.logoPhilosophy || null;
   return (
     <div className="bg-[#fafafa] min-h-screen pb-20">
       {/* Hero */}
@@ -38,18 +63,19 @@ export default function TentangPage() {
         <section className="grid md:grid-cols-2 gap-8 items-center mb-14">
           <div>
             <h2 className="text-2xl font-black text-gray-900 mb-4">Cerita Kami</h2>
-            <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
-              MOCHIKIN lahir di Bandung dari obsesi sederhana: ayam crispy gaya Korea yang konsisten kriuknya dan marinasi yang meresap sampai ke tulang.
-              Kami menggabungkan teknik Korean fried chicken dengan saus-saus otentik yang dimatangkan sendiri.
-            </p>
+            {story.map((paragraph, i) => (
+              <p
+                key={i}
+                className={`text-gray-600 text-sm sm:text-base leading-relaxed ${i === 0 ? "mb-4" : ""}`}
+              >
+                {paragraph}
+              </p>
+            ))}
             {/* TODO: lengkapi cerita asal-usul versi owner brand */}
-            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-              Hari ini, MOCHIKIN melayani pelanggan melalui dine-in di outlet dan channel delivery favorit — WhatsApp, GoFood, GrabFood, dan ShopeeFood.
-            </p>
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/produk/produk_korean-crispy-chicken_plate_01.jpg"
+            src={storyImage}
             alt="Ayam krispy khas Korea MOCHIKIN"
             className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-md"
           />
@@ -61,14 +87,14 @@ export default function TentangPage() {
           {/* TODO: konfirmasi visi-misi resmi dari owner */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
             <h3 className="font-bold text-gray-900 mb-2 text-lg">Visi</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">Menjadi brand Korean crispy chicken yang paling dicintai di Indonesia. (TODO: visi resmi)</p>
+            <p className="text-sm text-gray-600 leading-relaxed">{vision}</p>
           </div>
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
             <h3 className="font-bold text-gray-900 mb-2 text-lg">Misi</h3>
             <ul className="text-sm text-gray-600 leading-relaxed list-disc pl-5 space-y-1">
-              <li>Menyajikan ayam crispy dengan standar rasa dan tekstur paling konsisten.</li>
-              <li>Membuat setiap pelanggan dilayani dengan senang hati.</li>
-              <li>Tumbuh bersama komunitas dan channel pesan yang mudah diakses.</li>
+              {mission.map((m, i) => (
+                <li key={i}>{m}</li>
+              ))}
             </ul>
           </div>
         </div>
@@ -76,7 +102,7 @@ export default function TentangPage() {
         {/* Nilai-nilai brand */}
         <h2 className="text-2xl font-black text-gray-900 mb-6">Nilai-Nilai Kami</h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-14">
-          {BRAND_VALUES.map((v, i) => {
+          {values.map((v, i) => {
             const Icon = VALUE_ICONS[i % VALUE_ICONS.length];
             return (
               <div key={v.title} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
@@ -101,22 +127,28 @@ export default function TentangPage() {
           />
           <div>
             <h2 className="text-2xl font-black text-gray-900 mb-3">Filosofi Logo</h2>
-            <p className="text-sm text-gray-600 leading-relaxed mb-2">
-              Warna <strong className="text-[#FF6B35]">oranye</strong> merepresentasikan semangat dan kehangatan sajian; aksen{" "}
-              <strong>chartreuse kuning cerah</strong> menghadirkan kesan ceria, muda, dan menggugah selera — seperti pengalaman memakan ayam
-              crispy Korea yang menyenangkan.
-            </p>
-            <p className="text-[11px] text-gray-400">
-              {/* TODO: ganti dengan filosofi logo & maskot resmi dari brand guideline */}
-              Filosofi maskot belum dirinci — lihat brand guideline MOCHIKIN. (TODO)
-            </p>
+            {logoPhilosophy ? (
+              <p className="text-sm text-gray-600 leading-relaxed whitespace-pre-line">{logoPhilosophy}</p>
+            ) : (
+              <>
+                <p className="text-sm text-gray-600 leading-relaxed mb-2">
+                  Warna <strong className="text-[#FF6B35]">oranye</strong> merepresentasikan semangat dan kehangatan sajian; aksen{" "}
+                  <strong>chartreuse kuning cerah</strong> menghadirkan kesan ceria, muda, dan menggugah selera — seperti pengalaman memakan ayam
+                  crispy Korea yang menyenangkan.
+                </p>
+                <p className="text-[11px] text-gray-400">
+                  {/* TODO: ganti dengan filosofi logo & maskot resmi dari brand guideline */}
+                  Filosofi maskot belum dirinci — lihat brand guideline MOCHIKIN. (TODO)
+                </p>
+              </>
+            )}
           </div>
         </section>
 
         {/* Perjalanan kami */}
         <h2 className="text-2xl font-black text-gray-900 mb-6">Perjalanan Kami</h2>
         <ol className="relative border-l-2 border-[#FF6B35]/30 space-y-8 ml-3 mb-14">
-          {TIMELINE_MILESTONES.map((m) => (
+          {timeline.map((m) => (
             <li key={m.year} className="pl-6 relative">
               <span className="absolute -left-2 top-0 w-4 h-4 rounded-full bg-[#FF6B35] border-4 border-white shadow" aria-hidden="true" />
               <p className="text-xs font-black text-[#FF6B35] uppercase tracking-wide mb-1">{m.year}</p>
@@ -131,7 +163,7 @@ export default function TentangPage() {
         <h2 className="text-2xl font-black text-gray-900 mb-2">Tim Kami</h2>
         <p className="text-[11px] text-gray-400 mb-5 uppercase tracking-wide font-bold">⚠️ Nama &amp; foto placeholder — ganti dengan data asli (TODO)</p>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-14">
-          {TEAM_MEMBERS.map((t) => (
+          {team.map((t) => (
             <article key={t.name} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 text-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={t.photo} alt={`Foto ${t.name} (placeholder)`} className="w-20 h-20 rounded-full object-cover mx-auto mb-3 bg-gray-100" />

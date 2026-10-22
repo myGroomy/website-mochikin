@@ -3,15 +3,16 @@ import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight, MapPin, Briefcase, CheckCircle2, Send } from "lucide-react";
-import { JOB_ITEMS } from "@/data/pagesData";
+import { getJobs, getJobBySlug, getKarier } from "@/lib/cms";
 
-export function generateStaticParams() {
-  return JOB_ITEMS.map((j) => ({ slug: j.slug }));
+export async function generateStaticParams() {
+  const jobs = await getJobs();
+  return jobs.map((j) => ({ slug: j.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const job = JOB_ITEMS.find((j) => j.slug === slug);
+  const job = await getJobBySlug(slug);
   if (!job) return { title: "Lowongan tidak ditemukan | MOCHIKIN" };
   return {
     title: `${job.title} | Karier MOCHIKIN`,
@@ -21,10 +22,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function CareerDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const job = JOB_ITEMS.find((j) => j.slug === slug);
+  const job = await getJobBySlug(slug);
   if (!job) notFound();
 
-  const otherJobs = JOB_ITEMS.filter((j) => j.slug !== job.slug).slice(0, 3);
+  const [allJobs, karier] = await Promise.all([getJobs(), getKarier()]);
+  const otherJobs = allJobs.filter((j) => j.slug !== job.slug).slice(0, 3);
+  const hrEmail = karier?.hrEmail || "hr@mochikin.id";
 
   return (
     <div className="bg-[#fafafa] min-h-screen pb-20">
@@ -92,7 +95,7 @@ export default async function CareerDetailPage({ params }: { params: Promise<{ s
           </p>
 
           <a
-            href={`mailto:hr@mochikin.id?subject=Lamaran ${job.title}`}
+            href={`mailto:${hrEmail}?subject=Lamaran ${job.title}`}
             className="mt-8 inline-flex items-center gap-2 bg-[#FF6B35] hover:bg-[#E55A2B] text-white font-bold py-3.5 px-6 rounded-full shadow-md"
           >
             <Send className="w-4 h-4" aria-hidden="true" /> Lamar Sekarang

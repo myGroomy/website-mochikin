@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Flame, Star, ChevronDown, SearchX, Search } from "lucide-react";
 import { ALL_MENU_ITEMS, MENU_CATEGORIES } from "@/data/mochikinData";
 import type { MenuItem } from "@/data/mochikinData";
-
 function Label({ item }: { item: MenuItem }) {
   const name = item.name.toLowerCase();
   if (name.includes("spicy") || name.includes("pedas") || name.includes("hot"))
@@ -17,13 +16,19 @@ function Label({ item }: { item: MenuItem }) {
   return null;
 }
 
-export default function ProductCatalog() {
-  const all = React.useMemo(() => Object.values(ALL_MENU_ITEMS).flat(), []);
+export default function ProductCatalog({
+  items = Object.values(ALL_MENU_ITEMS).flat(),
+  categories: inputCategories = MENU_CATEGORIES,
+}: {
+  items?: MenuItem[];
+  categories?: string[];
+}) {
+  const all = items;
   const [category, setCategory] = React.useState("Semua");
   const [query, setQuery] = React.useState("");
   const [openNutrition, setOpenNutrition] = React.useState<string | null>(null);
 
-  const categories = React.useMemo(() => ["Semua", ...MENU_CATEGORIES], []);
+  const categories = React.useMemo(() => ["Semua", ...inputCategories], [inputCategories]);
 
   const filtered = all.filter((item) => {
     const matchCat = category === "Semua" || item.category === category;
@@ -32,8 +37,8 @@ export default function ProductCatalog() {
     return matchCat && matchQ;
   });
 
-  // Best seller: beberapa item favorit dari data
-  const bestSellerIds = new Set(["20", "107"]);
+  // Best seller: item favorit ditandai berdasar nama (id CMS bisa berubah)
+  const bestSellerNames = new Set(["Mochi Burger®", "PaNas 1"]);
 
   return (
     <div>
@@ -86,7 +91,7 @@ export default function ProductCatalog() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={item.image} alt={item.name} className="w-full h-40 object-cover" />
                 <Label item={item} />
-                {bestSellerIds.has(item.id) && (
+                {bestSellerNames.has(item.name) && (
                   <span className="absolute top-3 right-3 inline-flex items-center gap-1 bg-[#FFD166] text-gray-900 text-[10px] font-bold px-2 py-0.5 rounded-full">
                     <Star className="w-3 h-3" aria-hidden="true" /> Best Seller
                   </span>

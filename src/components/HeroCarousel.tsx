@@ -5,30 +5,38 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { HERO_BANNERS } from "@/data/mochikinData";
+import type { HomeHeroBanner } from "@/lib/cms";
 
-export default function HeroCarousel() {
+type Banner = HomeHeroBanner & Record<never, never>;
+
+export default function HeroCarousel({
+  banners = HERO_BANNERS,
+}: {
+  banners?: Banner[];
+}) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
+    if (banners.length < 2) return;
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % HERO_BANNERS.length);
+      setCurrentIndex((prev) => (prev + 1) % banners.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [banners.length]);
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + HERO_BANNERS.length) % HERO_BANNERS.length);
+    setCurrentIndex((prev) => (prev - 1 + banners.length) % banners.length);
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % HERO_BANNERS.length);
+    setCurrentIndex((prev) => (prev + 1) % banners.length);
   };
 
   return (
     <div className="relative w-full overflow-hidden bg-gray-100 group">
       {/* Banner Container */}
       <div className="relative w-full aspect-[21/9] sm:aspect-[21/8] md:aspect-[3/1] max-h-[520px]">
-        {HERO_BANNERS.map((banner, index) => (
+        {banners.map((banner, index) => (
           <div
             key={banner.id}
             className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
@@ -70,7 +78,7 @@ export default function HeroCarousel() {
 
       {/* Indicator Dots */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex space-x-2.5">
-        {HERO_BANNERS.map((_, idx) => (
+        {banners.map((_, idx) => (
           <button
             key={idx}
             type="button"

@@ -78,6 +78,10 @@ export const OrderChannels: GlobalConfig = {
       ],
     },
   ],
-}
+  
+  hooks: {
+    afterChange: [() => {}],
 
+  },
+}
 export default OrderChannels

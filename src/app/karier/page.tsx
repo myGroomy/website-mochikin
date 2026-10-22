@@ -3,13 +3,15 @@ import React from "react";
 import Link from "next/link";
 import { ChevronRight, ArrowDown } from "lucide-react";
 import CareerList from "./CareerList";
+import { getJobs, getKarier } from "@/lib/cms";
 
 export const metadata: Metadata = {
   title: "Karier | MOCHIKIN",
   description: "Bergabung bersama tim MOCHIKIN: temukan lowongan kerja crew dapur, marketing, hingga posisi korporat. Tumbuh bersama brand yang berkembang.",
 };
 
-export default function KarierPage() {
+export default async function KarierPage() {
+  const [jobs, karier] = await Promise.all([getJobs(), getKarier()]);
   return (
     <div className="bg-[#fafafa] min-h-screen pb-20">
       {/* Hero */}
@@ -33,7 +35,13 @@ export default function KarierPage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-        <CareerList />
+        <CareerList
+          jobs={jobs}
+          steps={karier?.recruitmentSteps.length ? karier.recruitmentSteps : undefined}
+          faqs={karier?.faqs.length ? karier.faqs : undefined}
+          benefits={karier?.benefits.length ? karier.benefits : undefined}
+          hrEmail={karier?.hrEmail ?? null}
+        />
       </div>
     </div>
   );

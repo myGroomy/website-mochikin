@@ -4,6 +4,19 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight, Mail, PenLine } from "lucide-react";
 import { COMMITMENT_PILLARS, QUALITY_STEPS, IMPACT_STATS } from "@/data/pagesData";
+import { getKomitmen } from "@/lib/cms";
+
+const CERTS_FALLBACK = [
+  { name: "Sertifikasi Halal", note: "Menunggu konfirmasi dokumen" },
+  { name: "Registrasi BPOM", note: "Menunggu konfirmasi nomor" },
+  { name: "Izin Pangan (SIKM)", note: "Menunggu konfirmasi dokumen" },
+];
+
+const PROGRAMS_FALLBACK = [
+  { title: "Sampah Minyak Tepat", desc: "Minyak goreng bekas dari outlet dikumpulkan untuk pengolahan ulang bersama mitra. (TODO)" },
+  { title: "Kelas Gizi Anak", desc: "Edukasi pola makan seimbang untuk anak-anak di sekolah sekitar outlet. (TODO)" },
+  { title: "Bakti Komunitas", desc: "Kegiatan sosial berkala bersama tim outlet di komunitas sekitar. (TODO)" },
+];
 
 export const metadata: Metadata = {
   title: "Komitmen Kami | MOCHIKIN",
@@ -11,7 +24,15 @@ export const metadata: Metadata = {
     "Komitmen MOCHIKIN terhadap kualitas bahan, keamanan pangan, pelayanan, serta peduli lingkungan dan komunitas di sekitar outlet kami.",
 };
 
-export default function KomitmenPage() {
+export default async function KomitmenPage() {
+  const g = await getKomitmen();
+  const pillars = g?.pillars.length ? g.pillars : COMMITMENT_PILLARS;
+  const qualitySteps = g?.qualitySteps.length ? g.qualitySteps : QUALITY_STEPS;
+  const certs = g?.certifications.length ? g.certifications : CERTS_FALLBACK;
+  const programs = g?.communityPrograms.length
+    ? g.communityPrograms.map((c) => ({ ...c, desc: c.description }))
+    : PROGRAMS_FALLBACK;
+  const stats = g?.impactStats.length ? g.impactStats : IMPACT_STATS;
   return (
     <div className="bg-[#fafafa] min-h-screen pb-20">
       {/* Hero */}
@@ -35,8 +56,8 @@ export default function KomitmenPage() {
         {/* 4 pilar komitmen */}
         <h2 className="text-2xl font-black text-gray-900 mb-6">4 Pilar Komitmen</h2>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-14">
-          {COMMITMENT_PILLARS.map((p) => (
-            <article key={p.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+          {pillars.map((p, i) => (
+            <article key={p.title || i} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
               <span className="text-3xl mb-3 inline-block" aria-hidden="true">
                 {p.icon}
               </span>
@@ -49,10 +70,10 @@ export default function KomitmenPage() {
         {/* Standar kualitas (timeline stepping) */}
         <h2 className="text-2xl font-black text-gray-900 mb-6">Standar Kualitas: Dari Bahan ke Meja</h2>
         <ol className="relative border-l-2 border-[#FF6B35]/30 space-y-8 ml-3 mb-14">
-          {QUALITY_STEPS.map((s) => (
-            <li key={s.step} className="pl-6 relative">
+          {qualitySteps.map((s: { title: string; description: string; step?: number }, i) => (
+            <li key={s.step ?? i + 1} className="pl-6 relative">
               <span className="absolute -left-[15px] top-0 w-8 h-8 rounded-full bg-[#FF6B35] text-white text-sm font-black flex items-center justify-center">
-                {s.step}
+                {s.step ?? i + 1}
               </span>
               <h3 className="font-bold text-gray-900 mb-1">{s.title}</h3>
               <p className="text-sm text-gray-500 max-w-xl">{s.description}</p>
@@ -66,11 +87,7 @@ export default function KomitmenPage() {
           Daftar sertifikasi dan izin resmi MOCHIKIN. {/* TODO: konfirmasi & masukkan sertifikasi asli (halal, BPOM, dll) */}
         </p>
         <div className="grid gap-4 sm:grid-cols-3 mb-14">
-          {[
-            { name: "Sertifikasi Halal", note: "Menunggu konfirmasi dokumen" },
-            { name: "Registrasi BPOM", note: "Menunggu konfirmasi nomor" },
-            { name: "Izin Pangan (SIKM)", note: "Menunggu konfirmasi dokumen" },
-          ].map((s) => (
+          {certs.map((s) => (
             <div key={s.name} className="bg-white border-2 border-dashed border-gray-200 rounded-2xl p-6 text-center">
               <Image src="/assets/logo/logo_mochikin-primary-logo_outline_01.png" alt="" width={48} height={48} className="mx-auto mb-3 opacity-40" />
               <h3 className="font-bold text-gray-800 text-sm">{s.name}</h3>
@@ -83,11 +100,7 @@ export default function KomitmenPage() {
         <h2 className="text-2xl font-black text-gray-900 mb-6">Program Komunitas &amp; Keberlanjutan</h2>
         {/* TODO: ganti dengan program asli yang sudah berjalan */}
         <div className="grid gap-5 sm:grid-cols-3 mb-14">
-          {[
-            { title: "Sampah Minyak Tepat", desc: "Minyak goreng bekas dari outlet dikumpulkan untuk pengolahan ulang bersama mitra. (TODO)" },
-            { title: "Kelas Gizi Anak", desc: "Edukasi pola makan seimbang untuk anak-anak di sekolah sekitar outlet. (TODO)" },
-            { title: "Bakti Komunitas", desc: "Kegiatan sosial berkala bersama tim outlet di komunitas sekitar. (TODO)" },
-          ].map((c) => (
+          {programs.map((c) => (
             <article key={c.title} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
               <h3 className="font-bold text-gray-900 mb-2">{c.title}</h3>
               <p className="text-sm text-gray-500">{c.desc}</p>
@@ -99,7 +112,7 @@ export default function KomitmenPage() {
         <h2 className="text-2xl font-black text-gray-900 mb-2">Dampak Kami</h2>
         <p className="text-[11px] text-gray-400 mb-4 uppercase tracking-wide font-bold">⚠️ Data placeholder — ganti dengan angka riil</p>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
-          {IMPACT_STATS.map((st) => (
+          {stats.map((st) => (
             <div key={st.label} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 text-center">
               <p className="text-3xl font-black text-[#FF6B35] mb-1">{st.value}</p>
               <p className="text-xs font-semibold text-gray-500">{st.label}</p>

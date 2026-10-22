@@ -3,14 +3,15 @@ import React from "react";
 import Link from "next/link";
 import { ChevronRight, Utensils, ShoppingBag, Truck, Users } from "lucide-react";
 import RestaurantDirectory from "./RestaurantDirectory";
-import { RESTAURANT_LOCATIONS } from "@/data/mochikinData";
+import { getLocations } from "@/lib/cms";
 
 export const metadata: Metadata = {
   title: "Restoran Kami | MOCHIKIN",
   description: "Temukan outlet MOCHIKIN terdekat: alamat, jam operasional, nomor telepon, dan layanan yang tersedia di setiap gerai.",
 };
 
-export default function RestoranKamiPage() {
+export default async function RestoranKamiPage() {
+  const locations = await getLocations();
   return (
     <div className="bg-[#fafafa] min-h-screen pb-20">
       {/* Hero */}
@@ -36,7 +37,7 @@ export default function RestoranKamiPage() {
         <div className="rounded-2xl bg-gradient-to-r from-[#FFD166]/60 to-[#FF6B35]/30 border border-amber-100 h-40 mb-6 flex items-center justify-center">
           <p className="text-gray-700 text-sm font-semibold">🗺️ Peta lokasi outlet — TODO: embed Google Maps</p>
         </div>
-        <RestaurantDirectory locations={RESTAURANT_LOCATIONS} />
+        <RestaurantDirectory locations={locations} />
       </div>
 
       {/* Layanan */}

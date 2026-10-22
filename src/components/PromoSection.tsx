@@ -3,10 +3,10 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { PROMOS_DATA } from "@/data/mochikinData";
+import { PROMOS_DATA, type Promo } from "@/data/mochikinData";
 
-export default function PromoSection() {
-  const featuredPromos = PROMOS_DATA.slice(0, 3);
+export default function PromoSection({ promos = PROMOS_DATA }: { promos?: Promo[] }) {
+  const featuredPromos = promos.slice(0, 3);
 
   return (
     <section className="py-16 bg-white">
@@ -22,7 +22,7 @@ export default function PromoSection() {
           {featuredPromos.map((promo) => (
             <Link
               key={promo.id}
-              href={`/promo#${promo.id}`}
+              href={`/promo#${promo.slug}`}
               className="group flex flex-col bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5"
             >
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-gray-50">

@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { Briefcase, MapPin, Clock3, ArrowRight, SearchX, GraduationCap, TrendingUp, Users, HandCoins, Send } from "lucide-react";
-import { JOB_ITEMS, RECRUITMENT_STEPS, CAREER_FAQ } from "@/data/pagesData";
+import { JOB_ITEMS, RECRUITMENT_STEPS, CAREER_FAQ, type JobItem } from "@/data/pagesData";
 
 const BENEFITS = [
   { icon: GraduationCap, title: "Pelatihan Berkelanjutan", desc: "Onboarding dan pelatihan SOP untuk setiap posisi." },
@@ -14,17 +14,38 @@ const BENEFITS = [
 
 const FAQS = CAREER_FAQ;
 
-export default function CareerList() {
+const HR_EMAIL_FALLBACK = "hr@mochikin.id";
+
+export default function CareerList({
+  jobs = JOB_ITEMS,
+  steps = RECRUITMENT_STEPS,
+  faqs = FAQS,
+  benefits,
+  hrEmail,
+}: {
+  jobs?: JobItem[];
+  steps?: string[];
+  faqs?: Array<{ q: string; a: string }>;
+  benefits?: Array<{ title: string; description: string }>;
+  hrEmail?: string | null;
+}) {
   const [location, setLocation] = React.useState("Semua Lokasi");
   const [dept, setDept] = React.useState("Semua Departemen");
   const [type, setType] = React.useState("Semua Tipe");
   const [openFaq, setOpenFaq] = React.useState<number | null>(null);
 
-  const locations = React.useMemo(() => ["Semua Lokasi", ...Array.from(new Set(JOB_ITEMS.map((j) => j.location)))], []);
-  const depts = React.useMemo(() => ["Semua Departemen", ...Array.from(new Set(JOB_ITEMS.map((j) => j.department)))], []);
-  const types = React.useMemo(() => ["Semua Tipe", ...Array.from(new Set(JOB_ITEMS.map((j) => j.type)))], []);
+  const hrEmailTo = hrEmail || HR_EMAIL_FALLBACK;
 
-  const filtered = JOB_ITEMS.filter(
+  // CMS benefits memakai ikon bawaan UI (fallback per urutan)
+  const benefitCards = benefits?.length
+    ? benefits.map((b, i) => ({ icon: BENEFITS[i % BENEFITS.length].icon, title: b.title, desc: b.description }))
+    : BENEFITS;
+
+  const locations = React.useMemo(() => ["Semua Lokasi", ...Array.from(new Set(jobs.map((j) => j.location)))], [jobs]);
+  const depts = React.useMemo(() => ["Semua Departemen", ...Array.from(new Set(jobs.map((j) => j.department)))], [jobs]);
+  const types = React.useMemo(() => ["Semua Tipe", ...Array.from(new Set(jobs.map((j) => j.type)))], [jobs]);
+
+  const filtered = jobs.filter(
     (j) =>
       (location === "Semua Lokasi" || j.location === location) &&
       (dept === "Semua Departemen" || j.department === dept) &&
@@ -36,7 +57,7 @@ export default function CareerList() {
       {/* Mengapa bergabung */}
       <h2 className="text-2xl font-black text-gray-900 mb-6">Mengapa Bergabung?</h2>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-14">
-        {BENEFITS.map((b) => (
+        {benefitCards.map((b) => (
           <div key={b.title} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
             <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#FFD166] text-gray-900 mb-3">
               <b.icon className="w-5 h-5" aria-hidden="true" />
@@ -126,10 +147,10 @@ export default function CareerList() {
           <p className="text-gray-600 mb-2 font-semibold">Belum ada posisi pada kombinasi filter ini.</p>
           <p className="text-sm text-gray-500 mb-4">Coba reset filter atau kirim CV kamu ke tim HR kami.</p>
           <a
-            href="mailto:hr@mochikin.id"
+            href={`mailto:${hrEmailTo}`}
             className="inline-flex items-center gap-2 border-2 border-[#FF6B35] text-[#FF6B35] hover:bg-[#FFF4E6] font-bold text-sm py-2.5 px-5 rounded-full"
           >
-            <Send className="w-4 h-4" aria-hidden="true" /> Kirim CV ke hr@mochikin.id (TODO)
+            <Send className="w-4 h-4" aria-hidden="true" /> Kirim CV ke {hrEmailTo}
           </a>
         </div>
       ) : (
@@ -166,7 +187,7 @@ export default function CareerList() {
       {/* Proses rekrutmen */}
       <h2 className="text-2xl font-black text-gray-900 mb-6">Proses Rekrutmen</h2>
       <ol className="flex flex-col lg:flex-row gap-4 mb-14">
-        {RECRUITMENT_STEPS.map((step, i) => (
+        {steps.map((step, i) => (
           <li key={step} className="flex-1 bg-white rounded-2xl border border-gray-100 shadow-sm p-5 relative">
             <p className="text-xs font-black text-[#FF6B35] mb-2">Langkah {i + 1}</p>
             <h3 className="font-bold text-gray-900 text-sm">{step}</h3>
@@ -177,7 +198,7 @@ export default function CareerList() {
       {/* FAQ karier */}
       <h2 className="text-2xl font-black text-gray-900 mb-6">Pertanyaan Umum</h2>
       <div className="space-y-3 mb-14">
-        {FAQS.map((f, i) => (
+        {faqs.map((f, i) => (
           <div key={i} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
             <button
               type="button"
@@ -200,7 +221,7 @@ export default function CareerList() {
         <h2 className="text-2xl font-black text-gray-900 mb-2">Tidak menemukan posisi yang cocok?</h2>
         <p className="text-gray-600 mb-5 text-sm">Kirim CV kamu — kami akan menghubungi kamu saat posisi yang cocok terbuka.</p>
         <a
-          href="mailto:hr@mochikin.id"
+          href={`mailto:${hrEmailTo}`}
           className="inline-flex items-center justify-center gap-2 bg-[#FF6B35] hover:bg-[#E55A2B] text-white font-bold py-3.5 px-6 rounded-full shadow-md"
         >
           <Send className="w-4 h-4" aria-hidden="true" /> Kirim CV

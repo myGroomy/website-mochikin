@@ -3,13 +3,16 @@ import React from "react";
 import Link from "next/link";
 import { ChevronRight, Newspaper } from "lucide-react";
 import NewsroomList from "./NewsroomList";
+import { getNewsList } from "@/lib/cms";
 
 export const metadata: Metadata = {
   title: "Newsroom | MOCHIKIN",
   description: "Siaran pers, promo, event, dan kegiatan CSR resmi dari MOCHIKIN.",
 };
 
-export default function NewsroomPage() {
+export default async function NewsroomPage() {
+  const items = await getNewsList();
+
   return (
     <div className="bg-[#fafafa] min-h-screen pb-20">
       {/* Hero */}
@@ -35,7 +38,7 @@ export default function NewsroomPage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-        <NewsroomList />
+        <NewsroomList items={items} />
       </div>
     </div>
   );
