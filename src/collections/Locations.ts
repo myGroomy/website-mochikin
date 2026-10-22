@@ -59,6 +59,15 @@ export const Locations: CollectionConfig = {
           maxLength: 60,
         },
       ],
+  access: {
+    create: (req: any) => {
+      return (req as any).user?.role === 'admin' || (req as any).user?.role === 'editor';
+    },
+    read: () => true,
+    update: (req: any) => {
+      return (req as any).user?.role === 'admin' || (req as any).user?.role === 'editor';
+    },
+  },
   hooks: {
     afterChange: [() => {}],
 

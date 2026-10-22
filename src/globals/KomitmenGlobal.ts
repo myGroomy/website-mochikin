@@ -133,6 +133,12 @@ export const KomitmenGlobal: GlobalConfig = {
       ],
     },
   ],
+  access: {
+    read: () => true,
+    update: (req) => {
+      return (req as any).user?.role === 'admin' || (req as any).user?.role === 'editor';
+    },
+  },
   hooks: {
     afterChange: [() => {}],
 

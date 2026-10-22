@@ -73,6 +73,12 @@ export const KarierGlobal: GlobalConfig = {
       label: 'Email HR (tujuan lamaran)',
     },
   ],
+  access: {
+    read: () => true,
+    update: (req) => {
+      return (req as any).user?.role === 'admin' || (req as any).user?.role === 'editor';
+    },
+  },
   hooks: {
     afterChange: [() => {}],
 

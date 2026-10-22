@@ -110,6 +110,12 @@ export const SiteSettings: GlobalConfig = {
     },
   ],
   
+  access: {
+    read: () => true,
+    update: (req) => {
+      return (req as any).user?.role === 'admin';
+    },
+  },
   hooks: {
     afterChange: [() => {}],
 
