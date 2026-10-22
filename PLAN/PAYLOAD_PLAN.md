@@ -191,3 +191,27 @@ Acceptance: setiap halaman identik dengan versi statis-lama (guna `diff` visual 
 - Bekerja di branch → `main` tidak tersentuh sampai PR diterima.
 - Data seed di Supabase bisa dihapus drop schema via SQL editor (`drop schema public cascade; create schema public;`) — **perhatian: ini menghapus semua tabel supabase itu**.
 - File `src/data/*.ts` tetap di repo sampai Fase 4 semua halaman ter-verified — fallback total: `git revert` ke commit sebelum integrasi.
+
+---
+
+## Catatan Implementasi Fase 1 (actual run, 2026-10-22)
+
+`create-payload-app` tidak bisa berjalan di shell non-TTY → integrasi manual (Path B) dari
+template resmi v3.91.0 (`node_modules/create-payload-app/dist/template`).
+
+Gotcha yang ditemukan ( undocumented):
+
+1. **Konflik tsx × Node 22.23 saat CLI Payload** (`payload generate:types` / `migrate` / `run`):
+   undici lempar `Illegal constructor`. Solusi: selalu tambahkan flag `--disable-transpile`
+   (Pakai TS-stripping bawaan Node) + import `.ts` eksplisit di `payload.config.ts`
+   (`./src/collections/Users.ts`). Skrip npm sudah diset demikian. tsconfig butuh
+   `allowImportingTsExtensions: true`.
+2. **tsconfig `@payload-config`** harus menunjuk `./payload.config.ts` milik proyek
+   (Bukan `./node_modules/@payloadcms/next/payload-config` — cara lama sudah tidak dipakai oleh CPA v3.91).
+3. **Config admin**: kunci yang benar `admin.meta` (`titleSuffix`), Bukan `admin.metadata`,
+   dan `MetaConfig` tidak menerima `favicon`.
+4. **`turbopack.root`** wajib di-set ke direktori proyek (sanitasi `WORKSPACE root` salah inferens).
+5. **`package.json`**: `"type": "module"` diperlukan (rekomendasi Payload; menghindari overhead reparse ESM).
+6. `/admin` shell 200 meski DB belum tersambung (PPR shell); error DB hanya muncul saat
+   API admin dipanggil. Segera setelah `DATABASE_URI` Supabase asli diisi, jalankan
+   `npx payload migrate --disable-transpile` untuk push schema.

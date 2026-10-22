@@ -7,6 +7,7 @@ import SecurityModal from "@/components/SecurityModal";
 import FloatingOrderButton from "@/components/FloatingOrderButton";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   title: "Home | MOCHIKIN",
   description:
     "Nikmati menu pilihan terbaik dengan kualitas makanan yang terjamin bersama teman dan keluargamu hanya di MOCHIKIN.",

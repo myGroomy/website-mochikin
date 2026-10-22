@@ -1,17 +1,15 @@
 import type { NextConfig } from "next";
+import { withPayload } from "@payloadcms/next/withPayload";
+import path from "path";
 
 const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   images: {
     unoptimized: true,
-    remotePatterns: [
-      { protocol: "https", hostname: "d2vuyvo9qdtgo9.cloudfront.net" },
-      { protocol: "https", hostname: "www.mcdonalds.co.id" },
-      { protocol: "https", hostname: "mcdonalds.co.id" },
-    ],
   },
   turbopack: {
+    root: path.resolve(import.meta.dirname ?? "."),
     rules: {
       "*.css": {
         loaders: ["@tailwindcss/turbopack"],
@@ -19,6 +17,15 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  // Sajikan file upload Payload (local disk media/) melalui REST API
+  async rewrites() {
+    return [
+      {
+        source: "/media/:path*",
+        destination: "/api/media/file/:path*",
+      },
+    ];
+  },
 };
 
-export default nextConfig;
+export default withPayload(nextConfig);
