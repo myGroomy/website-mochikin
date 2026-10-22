@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Send, CheckCircle2 } from "lucide-react";
 
 export default function Footer() {
@@ -27,30 +28,30 @@ export default function Footer() {
               MOCHIKIN&apos;s
             </h5>
             <div className="grid grid-cols-2 gap-y-3 gap-x-4 text-sm font-medium">
-              <a href="#hubungi" className="hover:text-[#FF6B35] transition-colors">
+              <Link href="/tentang" className="hover:text-[#FF6B35] transition-colors">
                 Hubungi Kami
-              </a>
-              <a href="#layanan" className="hover:text-[#FF6B35] transition-colors">
+              </Link>
+              <Link href="/restoran-kami" className="hover:text-[#FF6B35] transition-colors">
                 Layanan
-              </a>
-              <a href="/tentang-kami#tentang" className="hover:text-[#FF6B35] transition-colors">
+              </Link>
+              <Link href="/tentang" className="hover:text-[#FF6B35] transition-colors">
                 Tentang Kami
-              </a>
-              <a href="#sertifikasi" className="hover:text-[#FF6B35] transition-colors">
+              </Link>
+              <Link href="/komitmen" className="hover:text-[#FF6B35] transition-colors">
                 Sertifikasi &amp; Jaminan Halal
-              </a>
-              <a href="/tentang-kami#newsroom" className="hover:text-[#FF6B35] transition-colors">
+              </Link>
+              <Link href="/newsroom" className="hover:text-[#FF6B35] transition-colors">
                 Newsroom
-              </a>
-              <a href="#csr" className="hover:text-[#FF6B35] transition-colors">
+              </Link>
+              <Link href="/komitmen" className="hover:text-[#FF6B35] transition-colors">
                 CSR &amp; Komitmen Sosial
-              </a>
-              <a href="/tentang-kami#karier" className="hover:text-[#FF6B35] transition-colors">
+              </Link>
+              <Link href="/karier" className="hover:text-[#FF6B35] transition-colors">
                 Karier
-              </a>
-              <a href="#app" className="hover:text-[#FF6B35] transition-colors">
-                Aplikasi MOCHIKIN&apos;s
-              </a>
+              </Link>
+              <Link href="/order" className="hover:text-[#FF6B35] transition-colors">
+                Cara Pesan MOCHIKIN
+              </Link>
             </div>
           </div>
 
@@ -108,8 +109,8 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col space-y-2">
-              <a
-                href="#"
+              <Link
+                href="/order"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
@@ -121,9 +122,9 @@ export default function Footer() {
                   height={40}
                   className="w-36 h-10 object-contain"
                 />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/order"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
@@ -135,7 +136,7 @@ export default function Footer() {
                   height={40}
                   className="w-36 h-10 object-contain"
                 />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -179,12 +180,12 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
           <div>&copy; 2026 MOCHIKIN&apos;s Indonesia. All Rights Reserved.</div>
           <div className="flex space-x-6">
-            <a href="#terms" className="hover:text-gray-900 transition-colors">
+            <Link href="/syarat-ketentuan" className="hover:text-gray-900 transition-colors">
               Syarat &amp; Ketentuan
-            </a>
-            <a href="#privacy" className="hover:text-gray-900 transition-colors">
+            </Link>
+            <Link href="/kebijakan-privasi" className="hover:text-gray-900 transition-colors">
               Kebijakan Privasi
-            </a>
+            </Link>
           </div>
         </div>
       </div>
