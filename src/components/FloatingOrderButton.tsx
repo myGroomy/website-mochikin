@@ -7,7 +7,7 @@ export default function FloatingOrderButton() {
   return (
     <aside aria-label="Quick order button" className="fixed bottom-6 right-6 z-40">
       <a
-        href="https://smart.link/ngzf73egtu2ip"
+        href="/order"
         target="_blank"
         rel="noopener noreferrer"
         className="group flex items-center bg-[#FFD166] hover:bg-[#E6B84A] text-gray-900 font-black text-sm sm:text-base px-5 py-3 rounded-full shadow-2xl hover:shadow-[0_8px_30px_rgba(255,188,13,0.5)] transition-all transform hover:-translate-y-1 active:translate-y-0"

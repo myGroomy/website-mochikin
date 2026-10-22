@@ -9,7 +9,7 @@ const CHANNELS = [
   { id: "gofood", name: "GoFood", desc: "Pesan antar via Gojek (GoFood).", href: "https://gofood.co.id", color: "bg-green-600", icon: Truck },
   { id: "grabfood", name: "GrabFood", desc: "Pesan antar via Grab (GrabFood).", href: "https://food.grab.com", color: "bg-green-700", icon: Truck },
   { id: "shopeefood", name: "ShopeeFood", desc: "Pesan antar via Shopee (ShopeeFood).", href: "https://shopee.co.id", color: "bg-orange-500", icon: ShoppingBag },
-  { id: "mochikinapp", name: "Mochikin App", desc: "Aplikasi resmi MOCHIKIN.", href: "https://smart.link/ngzf73egtu2ip", color: "bg-[#FFD166] text-gray-900", icon: Smartphone },
+  { id: "mochikinapp", name: "Mochikin App", desc: "Aplikasi resmi MOCHIKIN.", href: "#", color: "bg-[#FFD166] text-gray-900", icon: Smartphone },
 ];
 
 export default function OrderPage() {

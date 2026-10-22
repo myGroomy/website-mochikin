@@ -149,7 +149,7 @@ export default function PromoPage() {
 
               <div className="pt-3 flex gap-3">
                 <a
-                  href="https://smart.link/ngzf73egtu2ip"
+                  href="/order"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 bg-[#FFD166] hover:bg-[#E6B84A] text-gray-900 font-extrabold py-3 px-6 rounded-full text-sm flex items-center justify-center shadow-md transition-all"
