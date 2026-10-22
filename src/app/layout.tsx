@@ -11,15 +11,15 @@ export const metadata: Metadata = {
   description:
     "Nikmati menu pilihan terbaik dengan kualitas makanan yang terjamin bersama teman dan keluargamu hanya di MOCHIKIN.",
   icons: {
-    icon: "https://placehold.co/600x400",
-    apple: "https://placehold.co/600x400",
+    icon: "/assets/logo/logo_mochikin-primary-logo_outline_01.png",
+    apple: "/assets/logo/logo_mochikin-primary-logo_outline_01.png",
   },
   openGraph: {
     title: "Home | MOCHIKIN",
     description:
       "Nikmati menu pilihan terbaik dengan kualitas makanan yang terjamin bersama teman dan keluargamu hanya di MOCHIKIN.",
     url: "https://mochikin.id",
-    images: ["https://placehold.co/600x400"],
+    images: ["/assets/logo/logo_mochikin-primary-logo_outline_01.png"],
   },
 };
 

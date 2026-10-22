@@ -1,0 +1,537 @@
+[
+  {
+    "old_path": "ESB Order_files/logo_mochikin-primary-logo_outline_01.png",
+    "new_path": "assets/logo/logo_mochikin-primary-logo_outline_01.png",
+    "rel_assets": "logo/logo_mochikin-primary-logo_outline_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_hampers-bahagia-package_v1_01.jpeg",
+    "new_path": "assets/produk/produk_hampers-bahagia-package_v1_01.jpeg",
+    "rel_assets": "produk/produk_hampers-bahagia-package_v1_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_hampers-bahagia-package_v2_02.jpeg",
+    "new_path": "assets/produk/produk_hampers-bahagia-package_v2_02.jpeg",
+    "rel_assets": "produk/produk_hampers-bahagia-package_v2_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_mochikin-survival-bundle_box_01.jpeg",
+    "new_path": "assets/produk/produk_mochikin-survival-bundle_box_01.jpeg",
+    "rel_assets": "produk/produk_mochikin-survival-bundle_box_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/banner_menu-catalog-a5_v1_01.png",
+    "new_path": "assets/banner/banner_menu-catalog-a5_v1_01.png",
+    "rel_assets": "banner/banner_menu-catalog-a5_v1_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/banner_menu-catalog-a5_v2_02.png",
+    "new_path": "assets/banner/banner_menu-catalog-a5_v2_02.png",
+    "rel_assets": "banner/banner_menu-catalog-a5_v2_02.png"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/banner_menu-catalog-a5_hd_03.png",
+    "new_path": "assets/banner/banner_menu-catalog-a5_hd_03.png",
+    "rel_assets": "banner/banner_menu-catalog-a5_hd_03.png"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_korean-crispy-chicken_plate_01.jpg",
+    "new_path": "assets/produk/produk_korean-crispy-chicken_plate_01.jpg",
+    "rel_assets": "produk/produk_korean-crispy-chicken_plate_01.jpg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/feed-sosmed_promo-korean-banana-milk_yellow_01.png",
+    "new_path": "assets/feed-sosmed/feed-sosmed_promo-korean-banana-milk_yellow_01.png",
+    "rel_assets": "feed-sosmed/feed-sosmed_promo-korean-banana-milk_yellow_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/feed-sosmed_promo-korean-strawberry-milk_yellow_01.png",
+    "new_path": "assets/feed-sosmed/feed-sosmed_promo-korean-strawberry-milk_yellow_01.png",
+    "rel_assets": "feed-sosmed/feed-sosmed_promo-korean-strawberry-milk_yellow_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/feed-sosmed_promo-korean-tea_yellow_01.png",
+    "new_path": "assets/feed-sosmed/feed-sosmed_promo-korean-tea_yellow_01.png",
+    "rel_assets": "feed-sosmed/feed-sosmed_promo-korean-tea_yellow_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/feed-sosmed_promo-korean-chocolate_yellow_01.png",
+    "new_path": "assets/feed-sosmed/feed-sosmed_promo-korean-chocolate_yellow_01.png",
+    "rel_assets": "feed-sosmed/feed-sosmed_promo-korean-chocolate_yellow_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_plain-white-rice_bowl_01.jpeg",
+    "new_path": "assets/produk/produk_plain-white-rice_bowl_01.jpeg",
+    "rel_assets": "produk/produk_plain-white-rice_bowl_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/pattern_yellow-solid-background_plain_01.png",
+    "new_path": "assets/pattern/pattern_yellow-solid-background_plain_01.png",
+    "rel_assets": "pattern/pattern_yellow-solid-background_plain_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/pattern_yellow-grid-background_grid_01.png",
+    "new_path": "assets/pattern/pattern_yellow-grid-background_grid_01.png",
+    "rel_assets": "pattern/pattern_yellow-grid-background_grid_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_crispy-chicken-lemon_bowl_01.jpg",
+    "new_path": "assets/produk/produk_crispy-chicken-lemon_bowl_01.jpg",
+    "rel_assets": "produk/produk_crispy-chicken-lemon_bowl_01.jpg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/kemasan_takeaway-chicken-boxes_stacked_01.jpg",
+    "new_path": "assets/kemasan/kemasan_takeaway-chicken-boxes_stacked_01.jpg",
+    "rel_assets": "kemasan/kemasan_takeaway-chicken-boxes_stacked_01.jpg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/lainnya_cafe-menu-clipboard_blue_01.jpg",
+    "new_path": "assets/lainnya/lainnya_cafe-menu-clipboard_blue_01.jpg",
+    "rel_assets": "lainnya/lainnya_cafe-menu-clipboard_blue_01.jpg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/feed-sosmed_qr-menu-poster_yellow_01.jpg",
+    "new_path": "assets/feed-sosmed/feed-sosmed_qr-menu-poster_yellow_01.jpg",
+    "rel_assets": "feed-sosmed/feed-sosmed_qr-menu-poster_yellow_01.jpg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/logo_halal-indonesia-emblem_purple_01.jpg",
+    "new_path": "assets/logo/logo_halal-indonesia-emblem_purple_01.jpg",
+    "rel_assets": "logo/logo_halal-indonesia-emblem_purple_01.jpg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_chicken-fries-box_white_01.jpg",
+    "new_path": "assets/produk/produk_chicken-fries-box_white_01.jpg",
+    "rel_assets": "produk/produk_chicken-fries-box_white_01.jpg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-gochujang-chicken_basket_01.jpeg",
+    "new_path": "assets/produk/produk_spicy-gochujang-chicken_basket_01.jpeg",
+    "rel_assets": "produk/produk_spicy-gochujang-chicken_basket_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_dual-flavor-chicken-box_spicy-cheese_01.jpeg",
+    "new_path": "assets/produk/produk_dual-flavor-chicken-box_spicy-cheese_01.jpeg",
+    "rel_assets": "produk/produk_dual-flavor-chicken-box_spicy-cheese_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_dual-flavor-chicken-box_onion-spicy_02.jpeg",
+    "new_path": "assets/produk/produk_dual-flavor-chicken-box_onion-spicy_02.jpeg",
+    "rel_assets": "produk/produk_dual-flavor-chicken-box_onion-spicy_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-chicken-skillet_bamboo_01.jpeg",
+    "new_path": "assets/produk/produk_spicy-chicken-skillet_bamboo_01.jpeg",
+    "rel_assets": "produk/produk_spicy-chicken-skillet_bamboo_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_chicken-topokki-combo_takeaway_01.jpeg",
+    "new_path": "assets/produk/produk_chicken-topokki-combo_takeaway_01.jpeg",
+    "rel_assets": "produk/produk_chicken-topokki-combo_takeaway_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_complete-chicken-fries-box_combo_01.jpeg",
+    "new_path": "assets/produk/produk_complete-chicken-fries-box_combo_01.jpeg",
+    "rel_assets": "produk/produk_complete-chicken-fries-box_combo_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_korean-strawberry-milk_glass-cherry_01.jpeg",
+    "new_path": "assets/produk/produk_korean-strawberry-milk_glass-cherry_01.jpeg",
+    "rel_assets": "produk/produk_korean-strawberry-milk_glass-cherry_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-chicken-skillet_closeup_02.jpeg",
+    "new_path": "assets/produk/produk_spicy-chicken-skillet_closeup_02.jpeg",
+    "rel_assets": "produk/produk_spicy-chicken-skillet_closeup_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_korean-strawberry-milk_glass-ice_02.jpeg",
+    "new_path": "assets/produk/produk_korean-strawberry-milk_glass-ice_02.jpeg",
+    "rel_assets": "produk/produk_korean-strawberry-milk_glass-ice_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_creamy-rose-topokki_stainless_01.jpeg",
+    "new_path": "assets/produk/produk_creamy-rose-topokki_stainless_01.jpeg",
+    "rel_assets": "produk/produk_creamy-rose-topokki_stainless_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_hampers-bahagia-package_fullset-v1_03.jpeg",
+    "new_path": "assets/produk/produk_hampers-bahagia-package_fullset-v1_03.jpeg",
+    "rel_assets": "produk/produk_hampers-bahagia-package_fullset-v1_03.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_creamy-cheese-topokki_stainless_01.jpeg",
+    "new_path": "assets/produk/produk_creamy-cheese-topokki_stainless_01.jpeg",
+    "rel_assets": "produk/produk_creamy-cheese-topokki_stainless_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/banner_sauce-selection-guide_yellow_01.jpeg",
+    "new_path": "assets/banner/banner_sauce-selection-guide_yellow_01.jpeg",
+    "rel_assets": "banner/banner_sauce-selection-guide_yellow_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_hampers-bahagia-package_fullset-v2_04.jpeg",
+    "new_path": "assets/produk/produk_hampers-bahagia-package_fullset-v2_04.jpeg",
+    "rel_assets": "produk/produk_hampers-bahagia-package_fullset-v2_04.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_creamy-cheese-topokki_angled_02.jpeg",
+    "new_path": "assets/produk/produk_creamy-cheese-topokki_angled_02.jpeg",
+    "rel_assets": "produk/produk_creamy-cheese-topokki_angled_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_original-spicy-topokki_stainless_01.jpeg",
+    "new_path": "assets/produk/produk_original-spicy-topokki_stainless_01.jpeg",
+    "rel_assets": "produk/produk_original-spicy-topokki_stainless_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_korean-strawberry-milk_jar_03.jpeg",
+    "new_path": "assets/produk/produk_korean-strawberry-milk_jar_03.jpeg",
+    "rel_assets": "produk/produk_korean-strawberry-milk_jar_03.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_hampers-bahagia-package_duplicate-031_05.jpeg",
+    "new_path": "assets/produk/produk_hampers-bahagia-package_duplicate-031_05.jpeg",
+    "rel_assets": "produk/produk_hampers-bahagia-package_duplicate-031_05.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_hampers-bahagia-package_fullset-v3_06.jpeg",
+    "new_path": "assets/produk/produk_hampers-bahagia-package_fullset-v3_06.jpeg",
+    "rel_assets": "produk/produk_hampers-bahagia-package_fullset-v3_06.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_original-spicy-topokki_topview_02.jpeg",
+    "new_path": "assets/produk/produk_original-spicy-topokki_topview_02.jpeg",
+    "rel_assets": "produk/produk_original-spicy-topokki_topview_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_pouring-korean-chocolate_action_01.jpeg",
+    "new_path": "assets/produk/produk_pouring-korean-chocolate_action_01.jpeg",
+    "rel_assets": "produk/produk_pouring-korean-chocolate_action_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_kids-meal-rice-bowl_milk-set_01.jpeg",
+    "new_path": "assets/produk/produk_kids-meal-rice-bowl_milk-set_01.jpeg",
+    "rel_assets": "produk/produk_kids-meal-rice-bowl_milk-set_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-chicken-skillet_wood-handle_03.jpeg",
+    "new_path": "assets/produk/produk_spicy-chicken-skillet_wood-handle_03.jpeg",
+    "rel_assets": "produk/produk_spicy-chicken-skillet_wood-handle_03.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_korean-odeng-soup_skewer_01.jpeg",
+    "new_path": "assets/produk/produk_korean-odeng-soup_skewer_01.jpeg",
+    "rel_assets": "produk/produk_korean-odeng-soup_skewer_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_korean-spicy-kimchi_chopsticks_01.jpeg",
+    "new_path": "assets/produk/produk_korean-spicy-kimchi_chopsticks_01.jpeg",
+    "rel_assets": "produk/produk_korean-spicy-kimchi_chopsticks_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_creamy-cheese-sauce_dip-cup_01.jpeg",
+    "new_path": "assets/produk/produk_creamy-cheese-sauce_dip-cup_01.jpeg",
+    "rel_assets": "produk/produk_creamy-cheese-sauce_dip-cup_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_sausage-french-fries_basket_01.jpeg",
+    "new_path": "assets/produk/produk_sausage-french-fries_basket_01.jpeg",
+    "rel_assets": "produk/produk_sausage-french-fries_basket_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_plain-white-rice_black-bowl_02.jpeg",
+    "new_path": "assets/produk/produk_plain-white-rice_black-bowl_02.jpeg",
+    "rel_assets": "produk/produk_plain-white-rice_black-bowl_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_iced-chocolate-kitkat_cup-wood_01.jpeg",
+    "new_path": "assets/produk/produk_iced-chocolate-kitkat_cup-wood_01.jpeg",
+    "rel_assets": "produk/produk_iced-chocolate-kitkat_cup-wood_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_seasoned-french-fries_black-basket_01.jpeg",
+    "new_path": "assets/produk/produk_seasoned-french-fries_black-basket_01.jpeg",
+    "rel_assets": "produk/produk_seasoned-french-fries_black-basket_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_mineral-water-bottle_single_01.jpeg",
+    "new_path": "assets/produk/produk_mineral-water-bottle_single_01.jpeg",
+    "rel_assets": "produk/produk_mineral-water-bottle_single_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_iced-chocolate-kitkat_cup-closeup_02.jpeg",
+    "new_path": "assets/produk/produk_iced-chocolate-kitkat_cup-closeup_02.jpeg",
+    "rel_assets": "produk/produk_iced-chocolate-kitkat_cup-closeup_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_iced-chocolate-kitkat_cup-angled_03.jpeg",
+    "new_path": "assets/produk/produk_iced-chocolate-kitkat_cup-angled_03.jpeg",
+    "rel_assets": "produk/produk_iced-chocolate-kitkat_cup-angled_03.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-chicken-skewer_single_01.jpeg",
+    "new_path": "assets/produk/produk_spicy-chicken-skewer_single_01.jpeg",
+    "rel_assets": "produk/produk_spicy-chicken-skewer_single_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_chikin-topokki-skillet_white-pot_01.jpeg",
+    "new_path": "assets/produk/produk_chikin-topokki-skillet_white-pot_01.jpeg",
+    "rel_assets": "produk/produk_chikin-topokki-skillet_white-pot_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_corndog-mozarella-sausage_grey-plate-v1_01.jpeg",
+    "new_path": "assets/produk/produk_corndog-mozarella-sausage_grey-plate-v1_01.jpeg",
+    "rel_assets": "produk/produk_corndog-mozarella-sausage_grey-plate-v1_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_melted-mozarella-topokki_wood-tray_01.jpeg",
+    "new_path": "assets/produk/produk_melted-mozarella-topokki_wood-tray_01.jpeg",
+    "rel_assets": "produk/produk_melted-mozarella-topokki_wood-tray_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_corndog-mozarella-sausage_grey-plate-v2_02.jpeg",
+    "new_path": "assets/produk/produk_corndog-mozarella-sausage_grey-plate-v2_02.jpeg",
+    "rel_assets": "produk/produk_corndog-mozarella-sausage_grey-plate-v2_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_chicken-fries-cheese_red-basket_01.jpeg",
+    "new_path": "assets/produk/produk_chicken-fries-cheese_red-basket_01.jpeg",
+    "rel_assets": "produk/produk_chicken-fries-cheese_red-basket_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_rice-bowl-gochujang_yellow-bowl-v1_01.jpeg",
+    "new_path": "assets/produk/produk_rice-bowl-gochujang_yellow-bowl-v1_01.jpeg",
+    "rel_assets": "produk/produk_rice-bowl-gochujang_yellow-bowl-v1_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-wings-fries_hand-pick_01.jpeg",
+    "new_path": "assets/produk/produk_spicy-wings-fries_hand-pick_01.jpeg",
+    "rel_assets": "produk/produk_spicy-wings-fries_hand-pick_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_rice-bowl-gochujang_yellow-bowl-v2_02.jpeg",
+    "new_path": "assets/produk/produk_rice-bowl-gochujang_yellow-bowl-v2_02.jpeg",
+    "rel_assets": "produk/produk_rice-bowl-gochujang_yellow-bowl-v2_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_rice-bowl-gochujang_duplicate-060_03.jpeg",
+    "new_path": "assets/produk/produk_rice-bowl-gochujang_duplicate-060_03.jpeg",
+    "rel_assets": "produk/produk_rice-bowl-gochujang_duplicate-060_03.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-chicken-bucket_red-chopsticks_01.jpeg",
+    "new_path": "assets/produk/produk_spicy-chicken-bucket_red-chopsticks_01.jpeg",
+    "rel_assets": "produk/produk_spicy-chicken-bucket_red-chopsticks_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-chicken-bucket_red-bamboo_02.jpeg",
+    "new_path": "assets/produk/produk_spicy-chicken-bucket_red-bamboo_02.jpeg",
+    "rel_assets": "produk/produk_spicy-chicken-bucket_red-bamboo_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_rice-bowl-cheese_yellow-bowl_01.jpeg",
+    "new_path": "assets/produk/produk_rice-bowl-cheese_yellow-bowl_01.jpeg",
+    "rel_assets": "produk/produk_rice-bowl-cheese_yellow-bowl_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_french-fries-bucket_dip-sauce-v1_01.jpeg",
+    "new_path": "assets/produk/produk_french-fries-bucket_dip-sauce-v1_01.jpeg",
+    "rel_assets": "produk/produk_french-fries-bucket_dip-sauce-v1_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_french-fries-bucket_dip-sauce-v2_02.jpeg",
+    "new_path": "assets/produk/produk_french-fries-bucket_dip-sauce-v2_02.jpeg",
+    "rel_assets": "produk/produk_french-fries-bucket_dip-sauce-v2_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-french-fries-bucket_dip-sauce_01.jpeg",
+    "new_path": "assets/produk/produk_spicy-french-fries-bucket_dip-sauce_01.jpeg",
+    "rel_assets": "produk/produk_spicy-french-fries-bucket_dip-sauce_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-chicken-bucket_duplicate-064_03.jpeg",
+    "new_path": "assets/produk/produk_spicy-chicken-bucket_duplicate-064_03.jpeg",
+    "rel_assets": "produk/produk_spicy-chicken-bucket_duplicate-064_03.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-gochujang-chicken_large-basket_02.jpeg",
+    "new_path": "assets/produk/produk_spicy-gochujang-chicken_large-basket_02.jpeg",
+    "rel_assets": "produk/produk_spicy-gochujang-chicken_large-basket_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_whole-crispy-chicken_wire-basket_01.jpeg",
+    "new_path": "assets/produk/produk_whole-crispy-chicken_wire-basket_01.jpeg",
+    "rel_assets": "produk/produk_whole-crispy-chicken_wire-basket_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_crispy-chicken-bucket_hand-lemon_01.jpeg",
+    "new_path": "assets/produk/produk_crispy-chicken-bucket_hand-lemon_01.jpeg",
+    "rel_assets": "produk/produk_crispy-chicken-bucket_hand-lemon_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-wings-samyang_red-set_01.jpeg",
+    "new_path": "assets/produk/produk_spicy-wings-samyang_red-set_01.jpeg",
+    "rel_assets": "produk/produk_spicy-wings-samyang_red-set_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_snow-onion-chicken_lemon-v1_01.jpeg",
+    "new_path": "assets/produk/produk_snow-onion-chicken_lemon-v1_01.jpeg",
+    "rel_assets": "produk/produk_snow-onion-chicken_lemon-v1_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_snow-onion-chicken_lemon-v2_02.jpeg",
+    "new_path": "assets/produk/produk_snow-onion-chicken_lemon-v2_02.jpeg",
+    "rel_assets": "produk/produk_snow-onion-chicken_lemon-v2_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_korean-spicy-kimchi_topview_02.jpeg",
+    "new_path": "assets/produk/produk_korean-spicy-kimchi_topview_02.jpeg",
+    "rel_assets": "produk/produk_korean-spicy-kimchi_topview_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-chicken-bucket_duplicate-070_04.jpeg",
+    "new_path": "assets/produk/produk_spicy-chicken-bucket_duplicate-070_04.jpeg",
+    "rel_assets": "produk/produk_spicy-chicken-bucket_duplicate-070_04.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_brushing-spicy-sauce_wire-rack_01.jpeg",
+    "new_path": "assets/produk/produk_brushing-spicy-sauce_wire-rack_01.jpeg",
+    "rel_assets": "produk/produk_brushing-spicy-sauce_wire-rack_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_chikin-topokki-skillet_yellow-bg_02.jpeg",
+    "new_path": "assets/produk/produk_chikin-topokki-skillet_yellow-bg_02.jpeg",
+    "rel_assets": "produk/produk_chikin-topokki-skillet_yellow-bg_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_cheese-sauce-wings_tin-plate_01.jpeg",
+    "new_path": "assets/produk/produk_cheese-sauce-wings_tin-plate_01.jpeg",
+    "rel_assets": "produk/produk_cheese-sauce-wings_tin-plate_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_snowy-cheese-wings_tin-plate_01.jpeg",
+    "new_path": "assets/produk/produk_snowy-cheese-wings_tin-plate_01.jpeg",
+    "rel_assets": "produk/produk_snowy-cheese-wings_tin-plate_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-bbq-wings_black-skillet_01.jpeg",
+    "new_path": "assets/produk/produk_spicy-bbq-wings_black-skillet_01.jpeg",
+    "rel_assets": "produk/produk_spicy-bbq-wings_black-skillet_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_nasi-wings-snowy-cheese_box-v1_01.jpeg",
+    "new_path": "assets/produk/produk_nasi-wings-snowy-cheese_box-v1_01.jpeg",
+    "rel_assets": "produk/produk_nasi-wings-snowy-cheese_box-v1_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_nasi-wings-snowy-cheese_box-v2_02.jpeg",
+    "new_path": "assets/produk/produk_nasi-wings-snowy-cheese_box-v2_02.jpeg",
+    "rel_assets": "produk/produk_nasi-wings-snowy-cheese_box-v2_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_nasi-wings-cheese-sauce_black-basket_01.jpeg",
+    "new_path": "assets/produk/produk_nasi-wings-cheese-sauce_black-basket_01.jpeg",
+    "rel_assets": "produk/produk_nasi-wings-cheese-sauce_black-basket_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_nasi-wings-spicy-gochujang_black-basket-v1_01.jpeg",
+    "new_path": "assets/produk/produk_nasi-wings-spicy-gochujang_black-basket-v1_01.jpeg",
+    "rel_assets": "produk/produk_nasi-wings-spicy-gochujang_black-basket-v1_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_nasi-wings-spicy-gochujang_black-basket-v2_02.jpeg",
+    "new_path": "assets/produk/produk_nasi-wings-spicy-gochujang_black-basket-v2_02.jpeg",
+    "rel_assets": "produk/produk_nasi-wings-spicy-gochujang_black-basket-v2_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-gochujang-wings_yellow-plate_01.jpeg",
+    "new_path": "assets/produk/produk_spicy-gochujang-wings_yellow-plate_01.jpeg",
+    "rel_assets": "produk/produk_spicy-gochujang-wings_yellow-plate_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_spicy-chicken-rice-bowl_chili-garnish_01.jpeg",
+    "new_path": "assets/produk/produk_spicy-chicken-rice-bowl_chili-garnish_01.jpeg",
+    "rel_assets": "produk/produk_spicy-chicken-rice-bowl_chili-garnish_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_creamy-chicken-rice-bowl_chili-garnish_01.jpeg",
+    "new_path": "assets/produk/produk_creamy-chicken-rice-bowl_chili-garnish_01.jpeg",
+    "rel_assets": "produk/produk_creamy-chicken-rice-bowl_chili-garnish_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_snowy-cheese-chicken_blue-plate_01.jpeg",
+    "new_path": "assets/produk/produk_snowy-cheese-chicken_blue-plate_01.jpeg",
+    "rel_assets": "produk/produk_snowy-cheese-chicken_blue-plate_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/feed-sosmed_promo-front-man-challenge_blue_01.jpeg",
+    "new_path": "assets/feed-sosmed/feed-sosmed_promo-front-man-challenge_blue_01.jpeg",
+    "rel_assets": "feed-sosmed/feed-sosmed_promo-front-man-challenge_blue_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/feed-sosmed_promo-package-456-meals_blue_01.jpeg",
+    "new_path": "assets/feed-sosmed/feed-sosmed_promo-package-456-meals_blue_01.jpeg",
+    "rel_assets": "feed-sosmed/feed-sosmed_promo-package-456-meals_blue_01.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_korean-strawberry-milk_cup-fresh_04.jpeg",
+    "new_path": "assets/produk/produk_korean-strawberry-milk_cup-fresh_04.jpeg",
+    "rel_assets": "produk/produk_korean-strawberry-milk_cup-fresh_04.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_mochikin-survival-bundle_table-spread_02.jpeg",
+    "new_path": "assets/produk/produk_mochikin-survival-bundle_table-spread_02.jpeg",
+    "rel_assets": "produk/produk_mochikin-survival-bundle_table-spread_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_whole-crispy-chicken_white-bg_02.jpeg",
+    "new_path": "assets/produk/produk_whole-crispy-chicken_white-bg_02.jpeg",
+    "rel_assets": "produk/produk_whole-crispy-chicken_white-bg_02.jpeg"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/produk_sliced-mozarella-cheese_wood-board_01.png",
+    "new_path": "assets/produk/produk_sliced-mozarella-cheese_wood-board_01.png",
+    "rel_assets": "produk/produk_sliced-mozarella-cheese_wood-board_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/banner_mochikin-mascot-illustration_clouds_01.jpg",
+    "new_path": "assets/banner/banner_mochikin-mascot-illustration_clouds_01.jpg",
+    "rel_assets": "banner/banner_mochikin-mascot-illustration_clouds_01.jpg"
+  },
+  {
+    "old_path": "ESB Order_files/logo_esb-system-pos_blue-orange_01.png",
+    "new_path": "assets/logo/logo_esb-system-pos_blue-orange_01.png",
+    "rel_assets": "logo/logo_esb-system-pos_blue-orange_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/icon_scroll-top-button_grey-circle_01.png",
+    "new_path": "assets/icon/icon_scroll-top-button_grey-circle_01.png",
+    "rel_assets": "icon/icon_scroll-top-button_grey-circle_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/icon_guest-user-avatar_svg_01.svg",
+    "new_path": "assets/icon/icon_guest-user-avatar_svg_01.svg",
+    "rel_assets": "icon/icon_guest-user-avatar_svg_01.svg"
+  },
+  {
+    "old_path": "ESB Order_files/icon_no-internet-connection_wifi-slash_01.png",
+    "new_path": "assets/icon/icon_no-internet-connection_wifi-slash_01.png",
+    "rel_assets": "icon/icon_no-internet-connection_wifi-slash_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/icon_promoted-star-badge_yellow-circle_01.png",
+    "new_path": "assets/icon/icon_promoted-star-badge_yellow-circle_01.png",
+    "rel_assets": "icon/icon_promoted-star-badge_yellow-circle_01.png"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/Kuliner bandung - Mochikin.mp4",
+    "new_path": "assets/video/video_kuliner-bandung-mochikin_01.mp4",
+    "rel_assets": "video/video_kuliner-bandung-mochikin_01.mp4"
+  },
+  {
+    "old_path": "ESB Order_files/IMG/Kuliner bandung new version .mp4",
+    "new_path": "assets/video/video_kuliner-bandung-mochikin_new-version_02.mp4",
+    "rel_assets": "video/video_kuliner-bandung-mochikin_new-version_02.mp4"
+  }
+]

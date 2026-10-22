@@ -67,7 +67,7 @@ export default function SecurityModal() {
         {/* Graphic melt accent */}
         <div className="relative h-3 w-full bg-yellow-400">
           <Image
-            src="https://placehold.co/600x400"
+            src="/assets/produk/produk_korean-crispy-chicken_plate_01.jpg"
             alt="Melt Graphic"
             fill
             sizes="100vw"

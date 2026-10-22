@@ -56,7 +56,7 @@ export default function AppSection() {
           <div className="md:col-span-5 flex justify-center md:justify-end">
             <div className="relative w-72 sm:w-80 h-[380px] sm:h-[420px]">
               <Image
-                src="https://placehold.co/600x400"
+                src="/assets/produk/produk_korean-crispy-chicken_plate_01.jpg"
                 alt="MOCHIKIN App Phone Mockup"
                 fill
                 sizes="(max-width: 768px) 100vw, 320px"

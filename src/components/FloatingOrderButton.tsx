@@ -14,7 +14,7 @@ export default function FloatingOrderButton() {
       >
         <span className="inline-flex items-center justify-center w-6 h-6 mr-2.5 flex-shrink-0 transition-transform group-hover:scale-110">
           <Image
-            src="https://placehold.co/600x400"
+            src="/assets/produk/produk_korean-crispy-chicken_plate_01.jpg"
             alt="MOCHIKINelivery"
             width={24}
             height={24}

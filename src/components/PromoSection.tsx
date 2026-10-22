@@ -51,7 +51,7 @@ export default function PromoSection() {
                 <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs text-gray-500 font-medium">
                   <span className="w-4 h-4 mr-2 inline-flex items-center justify-center flex-shrink-0">
                     <Image
-                      src="https://placehold.co/600x400"
+                      src="/assets/produk/produk_korean-crispy-chicken_plate_01.jpg"
                       alt="Calendar"
                       width={16}
                       height={16}

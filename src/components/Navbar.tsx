@@ -21,7 +21,7 @@ export default function Navbar() {
               <Link href="/" className="flex items-center group">
                 <span className="block w-14 h-12 relative flex-shrink-0">
                   <Image
-                    src="https://placehold.co/600x400"
+                    src="/assets/logo/logo_mochikin-primary-logo_outline_01.png"
                     alt="MOCHIKIN"
                     width={56}
                     height={48}
@@ -84,7 +84,7 @@ export default function Navbar() {
                         <div>
                           <div className="relative h-28 w-full mb-3 flex items-center justify-center">
                             <Image
-                              src="https://placehold.co/600x400"
+                              src="/assets/produk/produk_korean-crispy-chicken_plate_01.jpg"
                               alt="PaNas 1"
                               width={160}
                               height={112}
@@ -195,7 +195,7 @@ export default function Navbar() {
               >
                 <span className="w-5 h-5 mr-2 inline-flex items-center justify-center flex-shrink-0">
                   <Image
-                    src="https://placehold.co/600x400"
+                    src="/assets/produk/produk_korean-crispy-chicken_plate_01.jpg"
                     alt="MOCHIKINelivery"
                     width={20}
                     height={20}
@@ -241,7 +241,7 @@ export default function Navbar() {
                 >
                   <span className="w-5 h-5 mr-2 inline-flex items-center justify-center flex-shrink-0">
                     <Image
-                      src="https://placehold.co/600x400"
+                      src="/assets/produk/produk_korean-crispy-chicken_plate_01.jpg"
                       alt="MOCHIKINelivery"
                       width={20}
                       height={20}

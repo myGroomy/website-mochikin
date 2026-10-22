@@ -1,0 +1,632 @@
+[
+  {
+    "step": 1,
+    "path_lama": "ESB Order_files/BANNER_003_20250528155151.png",
+    "path_baru": "ESB Order_files/logo_mochikin-primary-logo_outline_01.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 2,
+    "path_lama": "ESB Order_files/IMG/MAIN_167_20250427174002.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_hampers-bahagia-package_v1_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 3,
+    "path_lama": "ESB Order_files/IMG/MAIN_168_20250427174847.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_hampers-bahagia-package_v2_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 4,
+    "path_lama": "ESB Order_files/IMG/MAIN_170_20250429180353.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_mochikin-survival-bundle_box_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 5,
+    "path_lama": "ESB Order_files/IMG/MENU-MOCHIKIN-A5-1.png",
+    "path_baru": "ESB Order_files/IMG/banner_menu-catalog-a5_v1_01.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 6,
+    "path_lama": "ESB Order_files/IMG/MENU-MOCHIKIN-A5-2.png",
+    "path_baru": "ESB Order_files/IMG/banner_menu-catalog-a5_v2_02.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 7,
+    "path_lama": "ESB Order_files/IMG/MENU-MOCHIKIN-A5.png",
+    "path_baru": "ESB Order_files/IMG/banner_menu-catalog-a5_hd_03.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 8,
+    "path_lama": "ESB Order_files/IMG/Mchkn-8.jpg",
+    "path_baru": "ESB Order_files/IMG/produk_korean-crispy-chicken_plate_01.jpg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 9,
+    "path_lama": "ESB Order_files/IMG/Mochikin Menu Minuman Baru-1 Korean Milk Banana.png",
+    "path_baru": "ESB Order_files/IMG/feed-sosmed_promo-korean-banana-milk_yellow_01.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 10,
+    "path_lama": "ESB Order_files/IMG/Mochikin Menu Minuman Baru-1 Korean Milk Strawberry.png",
+    "path_baru": "ESB Order_files/IMG/feed-sosmed_promo-korean-strawberry-milk_yellow_01.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 11,
+    "path_lama": "ESB Order_files/IMG/Mochikin Menu Minuman Baru-1 Korean Tea.png",
+    "path_baru": "ESB Order_files/IMG/feed-sosmed_promo-korean-tea_yellow_01.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 12,
+    "path_lama": "ESB Order_files/IMG/Mochikin Menu Minuman Baru-1 korean Chocolate.png",
+    "path_baru": "ESB Order_files/IMG/feed-sosmed_promo-korean-chocolate_yellow_01.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 13,
+    "path_lama": "ESB Order_files/IMG/Plain White Chinese traditional rice.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_plain-white-rice_bowl_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 14,
+    "path_lama": "ESB Order_files/IMG/SOP DEEPFREYER img ver1 (1).png",
+    "path_baru": "ESB Order_files/IMG/pattern_yellow-solid-background_plain_01.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 15,
+    "path_lama": "ESB Order_files/IMG/SOP DEEPFREYER img ver1.png",
+    "path_baru": "ESB Order_files/IMG/pattern_yellow-grid-background_grid_01.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 16,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-02-07 at 21.48.20_de90a7de.jpg",
+    "path_baru": "ESB Order_files/IMG/produk_crispy-chicken-lemon_bowl_01.jpg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 17,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-02-07 at 21.53.22_ee3b6d8f.jpg",
+    "path_baru": "ESB Order_files/IMG/kemasan_takeaway-chicken-boxes_stacked_01.jpg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 18,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-02-08 at 16.40.53_55680e4a.jpg",
+    "path_baru": "ESB Order_files/IMG/lainnya_cafe-menu-clipboard_blue_01.jpg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 19,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-02-09 at 20.23.14_e0787fb2.jpg",
+    "path_baru": "ESB Order_files/IMG/feed-sosmed_qr-menu-poster_yellow_01.jpg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 20,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-02-12 at 10.06.12_94984c98.jpg",
+    "path_baru": "ESB Order_files/IMG/logo_halal-indonesia-emblem_purple_01.jpg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 21,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-03-13 at 11.15.42_8fb3ab68.jpg",
+    "path_baru": "ESB Order_files/IMG/produk_chicken-fries-box_white_01.jpg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 22,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.12.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-gochujang-chicken_basket_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 23,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.13 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_dual-flavor-chicken-box_spicy-cheese_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 24,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.13.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_dual-flavor-chicken-box_onion-spicy_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 25,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.14 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-chicken-skillet_bamboo_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 26,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.14 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_chicken-topokki-combo_takeaway_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 27,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.14.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_complete-chicken-fries-box_combo_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 28,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.15 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_korean-strawberry-milk_glass-cherry_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 29,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.15 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-chicken-skillet_closeup_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 30,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.15.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_korean-strawberry-milk_glass-ice_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 31,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.16 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_creamy-rose-topokki_stainless_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 32,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.16 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_hampers-bahagia-package_fullset-v1_03.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 33,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.16.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_creamy-cheese-topokki_stainless_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 34,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.17 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/banner_sauce-selection-guide_yellow_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 35,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.17.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_hampers-bahagia-package_fullset-v2_04.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 36,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.18 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_creamy-cheese-topokki_angled_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 37,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.18 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_original-spicy-topokki_stainless_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 38,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.18.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_korean-strawberry-milk_jar_03.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 39,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.19 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_hampers-bahagia-package_duplicate-031_05.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 40,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.19 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_hampers-bahagia-package_fullset-v3_06.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 41,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.19.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_original-spicy-topokki_topview_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 42,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.20 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_pouring-korean-chocolate_action_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 43,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.20 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_kids-meal-rice-bowl_milk-set_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 44,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.20.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-chicken-skillet_wood-handle_03.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 45,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.21 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_korean-odeng-soup_skewer_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 46,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.21 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_korean-spicy-kimchi_chopsticks_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 47,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.21 (3).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_creamy-cheese-sauce_dip-cup_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 48,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.21.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_sausage-french-fries_basket_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 49,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.22 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_plain-white-rice_black-bowl_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 50,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.22 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_iced-chocolate-kitkat_cup-wood_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 51,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.22.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_seasoned-french-fries_black-basket_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 52,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.23 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_mineral-water-bottle_single_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 53,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.23 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_iced-chocolate-kitkat_cup-closeup_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 54,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.23.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_iced-chocolate-kitkat_cup-angled_03.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 55,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.24 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-chicken-skewer_single_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 56,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.24.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_chikin-topokki-skillet_white-pot_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 57,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.25 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_corndog-mozarella-sausage_grey-plate-v1_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 58,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.25 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_melted-mozarella-topokki_wood-tray_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 59,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.25.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_corndog-mozarella-sausage_grey-plate-v2_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 60,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.26 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_chicken-fries-cheese_red-basket_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 61,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.26 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_rice-bowl-gochujang_yellow-bowl-v1_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 62,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.26.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-wings-fries_hand-pick_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 63,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.27 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_rice-bowl-gochujang_yellow-bowl-v2_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 64,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.27.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_rice-bowl-gochujang_duplicate-060_03.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 65,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.28 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-chicken-bucket_red-chopsticks_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 66,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.28 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-chicken-bucket_red-bamboo_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 67,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.28.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_rice-bowl-cheese_yellow-bowl_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 68,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.29 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_french-fries-bucket_dip-sauce-v1_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 69,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.29 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_french-fries-bucket_dip-sauce-v2_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 70,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.29.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-french-fries-bucket_dip-sauce_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 71,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.30 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-chicken-bucket_duplicate-064_03.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 72,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.30.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-gochujang-chicken_large-basket_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 73,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.31 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_whole-crispy-chicken_wire-basket_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 74,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.31 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_crispy-chicken-bucket_hand-lemon_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 75,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.31.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-wings-samyang_red-set_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 76,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.32 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_snow-onion-chicken_lemon-v1_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 77,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.32 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_snow-onion-chicken_lemon-v2_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 78,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.32.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_korean-spicy-kimchi_topview_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 79,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.33 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-chicken-bucket_duplicate-070_04.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 80,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.33 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_brushing-spicy-sauce_wire-rack_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 81,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.33.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_chikin-topokki-skillet_yellow-bg_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 82,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.34 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_cheese-sauce-wings_tin-plate_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 83,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.34 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_snowy-cheese-wings_tin-plate_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 84,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.34.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-bbq-wings_black-skillet_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 85,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.35 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_nasi-wings-snowy-cheese_box-v1_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 86,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.35.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_nasi-wings-snowy-cheese_box-v2_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 87,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.36 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_nasi-wings-cheese-sauce_black-basket_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 88,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.36 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_nasi-wings-spicy-gochujang_black-basket-v1_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 89,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.36.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_nasi-wings-spicy-gochujang_black-basket-v2_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 90,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.37 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-gochujang-wings_yellow-plate_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 91,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.37 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_spicy-chicken-rice-bowl_chili-garnish_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 92,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.37 (3).jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_creamy-chicken-rice-bowl_chili-garnish_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 93,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.37.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_snowy-cheese-chicken_blue-plate_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 94,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.38 (1).jpeg",
+    "path_baru": "ESB Order_files/IMG/feed-sosmed_promo-front-man-challenge_blue_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 95,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.38 (2).jpeg",
+    "path_baru": "ESB Order_files/IMG/feed-sosmed_promo-package-456-meals_blue_01.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 96,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.38.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_korean-strawberry-milk_cup-fresh_04.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 97,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-28 at 17.54.39.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_mochikin-survival-bundle_table-spread_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 98,
+    "path_lama": "ESB Order_files/IMG/WhatsApp Image 2025-05-29 at 00.12.57.jpeg",
+    "path_baru": "ESB Order_files/IMG/produk_whole-crispy-chicken_white-bg_02.jpeg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 99,
+    "path_lama": "ESB Order_files/IMG/asdada.png",
+    "path_baru": "ESB Order_files/IMG/produk_sliced-mozarella-cheese_wood-board_01.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 100,
+    "path_lama": "ESB Order_files/IMG/image.jpg",
+    "path_baru": "ESB Order_files/IMG/banner_mochikin-mascot-illustration_clouds_01.jpg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 101,
+    "path_lama": "ESB Order_files/esb_logo.png",
+    "path_baru": "ESB Order_files/logo_esb-system-pos_blue-orange_01.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 102,
+    "path_lama": "ESB Order_files/gotop.png",
+    "path_baru": "ESB Order_files/icon_scroll-top-button_grey-circle_01.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 103,
+    "path_lama": "ESB Order_files/guest.svg",
+    "path_baru": "ESB Order_files/icon_guest-user-avatar_svg_01.svg",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 104,
+    "path_lama": "ESB Order_files/no-internet.png",
+    "path_baru": "ESB Order_files/icon_no-internet-connection_wifi-slash_01.png",
+    "status": "SUCCESS"
+  },
+  {
+    "step": 105,
+    "path_lama": "ESB Order_files/promoted.png",
+    "path_baru": "ESB Order_files/icon_promoted-star-badge_yellow-circle_01.png",
+    "status": "SUCCESS"
+  }
+]

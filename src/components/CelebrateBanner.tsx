@@ -10,7 +10,7 @@ export default function CelebrateBanner() {
       {/* Decorative melt divider */}
       <div className="absolute top-0 left-0 right-0 h-6 overflow-hidden pointer-events-none">
         <Image
-          src="https://placehold.co/600x400"
+          src="/assets/produk/produk_korean-crispy-chicken_plate_01.jpg"
           alt="Melt Graphic"
           fill
           sizes="100vw"
@@ -23,7 +23,7 @@ export default function CelebrateBanner() {
           {/* Image */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
             <Image
-              src="https://placehold.co/600x400"
+              src="/assets/produk/produk_korean-crispy-chicken_plate_01.jpg"
               alt="Dunia Anak MOCHIKIN"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
