@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Search, ChevronRight, X, ShoppingBag, Flame, Sparkles } from "lucide-react";
-import { MENU_CATEGORIES, ALL_MENU_ITEMS, MenuItem } from "@/data/mcdData";
+import { MENU_CATEGORIES, ALL_MENU_ITEMS, MenuItem } from "@/data/mochikinData";
 
 export default function MenuPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -27,11 +27,11 @@ export default function MenuPage() {
   return (
     <div className="bg-[#fafafa] min-h-screen pb-20">
       {/* Menu Header Cover */}
-      <div className="bg-[#fff9e6] border-b border-amber-100 py-12 lg:py-16 relative overflow-hidden">
+      <div className="bg-[#FFF4E6] border-b border-amber-100 py-12 lg:py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div>
             <div className="flex items-center space-x-2 text-xs font-semibold text-gray-500 mb-3">
-              <Link href="/" className="hover:text-[#db0007]">
+              <Link href="/" className="hover:text-[#FF6B35]">
                 Home
               </Link>
               <ChevronRight className="w-3.5 h-3.5" />
@@ -48,8 +48,8 @@ export default function MenuPage() {
 
           <div className="relative w-64 sm:w-80 h-40 sm:h-48 self-center md:self-auto">
             <Image
-              src="https://www.mcdonalds.co.id/assets/img/menu/menu-pages_.png"
-              alt="Menu McDonald's"
+              src="https://mochikin.id/assets/img/menu/menu-pages_.png"
+              alt="Menu MOCHIKIN"
               fill
               sizes="(max-width: 768px) 256px, 320px"
               className="object-contain"
@@ -70,7 +70,7 @@ export default function MenuPage() {
               placeholder="Cari burger, ayam, minuman..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 text-sm bg-white rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#db0007] shadow-sm"
+              className="w-full pl-10 pr-4 py-2.5 text-sm bg-white rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF6B35] shadow-sm"
             />
             {searchQuery && (
               <button
@@ -95,7 +95,7 @@ export default function MenuPage() {
             onClick={() => setSelectedCategory("All")}
             className={`flex-shrink-0 px-5 py-2 rounded-full text-xs sm:text-sm font-extrabold transition-all shadow-sm ${
               selectedCategory === "All"
-                ? "bg-[#db0007] text-white shadow-md"
+                ? "bg-[#FF6B35] text-white shadow-md"
                 : "bg-white text-gray-700 hover:bg-gray-100 border border-gray-200"
             }`}
           >
@@ -108,7 +108,7 @@ export default function MenuPage() {
               onClick={() => setSelectedCategory(cat)}
               className={`flex-shrink-0 px-5 py-2 rounded-full text-xs sm:text-sm font-extrabold transition-all shadow-sm ${
                 selectedCategory === cat
-                  ? "bg-[#db0007] text-white shadow-md"
+                  ? "bg-[#FF6B35] text-white shadow-md"
                   : "bg-white text-gray-700 hover:bg-gray-100 border border-gray-200"
               }`}
             >
@@ -120,7 +120,7 @@ export default function MenuPage() {
         {/* Menu Grid */}
         {filteredItems.length === 0 ? (
           <div className="bg-white rounded-3xl p-12 text-center border border-gray-200 shadow-sm max-w-md mx-auto my-12">
-            <div className="w-16 h-16 bg-red-50 text-[#db0007] rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-red-50 text-[#FF6B35] rounded-full flex items-center justify-center mx-auto mb-4">
               <Search className="w-8 h-8" />
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-1">Menu Tidak Ditemukan</h3>
@@ -133,7 +133,7 @@ export default function MenuPage() {
                 setSearchQuery("");
                 setSelectedCategory("All");
               }}
-              className="bg-[#db0007] text-white text-xs font-bold px-6 py-2.5 rounded-full"
+              className="bg-[#FF6B35] text-white text-xs font-bold px-6 py-2.5 rounded-full"
             >
               Reset Filter
             </button>
@@ -159,7 +159,7 @@ export default function MenuPage() {
                   <span className="text-[11px] font-bold text-red-600 uppercase tracking-wider block mb-1">
                     {item.category}
                   </span>
-                  <h3 className="font-extrabold text-gray-900 text-sm sm:text-base leading-snug group-hover:text-[#db0007] transition-colors line-clamp-1">
+                  <h3 className="font-extrabold text-gray-900 text-sm sm:text-base leading-snug group-hover:text-[#FF6B35] transition-colors line-clamp-1">
                     {item.name}
                   </h3>
                   <p className="text-xs text-gray-500 mt-1 line-clamp-2 leading-relaxed">
@@ -171,7 +171,7 @@ export default function MenuPage() {
                   <span className="font-extrabold text-gray-900 text-sm">{item.price}</span>
                   <button
                     type="button"
-                    className="w-8 h-8 rounded-full bg-[#ffbc0d] hover:bg-[#e5a80a] text-gray-900 flex items-center justify-center transition-colors shadow-sm"
+                    className="w-8 h-8 rounded-full bg-[#FFD166] hover:bg-[#E6B84A] text-gray-900 flex items-center justify-center transition-colors shadow-sm"
                     aria-label="Lihat detail"
                   >
                     <ShoppingBag className="w-4 h-4" />
@@ -214,11 +214,11 @@ export default function MenuPage() {
 
             <div className="space-y-4 text-center sm:text-left">
               <div>
-                <span className="inline-block px-3 py-1 bg-red-100 text-[#db0007] font-black text-xs uppercase tracking-wider rounded-full mb-2">
+                <span className="inline-block px-3 py-1 bg-red-100 text-[#FF6B35] font-black text-xs uppercase tracking-wider rounded-full mb-2">
                   {selectedItem.category}
                 </span>
                 <h3 className="text-2xl font-black text-gray-900">{selectedItem.name}</h3>
-                <p className="text-lg font-bold text-[#db0007] mt-1">{selectedItem.price}</p>
+                <p className="text-lg font-bold text-[#FF6B35] mt-1">{selectedItem.price}</p>
               </div>
 
               <p className="text-sm text-gray-600 leading-relaxed">{selectedItem.description}</p>
@@ -246,10 +246,10 @@ export default function MenuPage() {
                   href="https://smart.link/ngzf73egtu2ip"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 bg-[#ffbc0d] hover:bg-[#e5a80a] text-gray-900 font-black py-3 px-6 rounded-full text-sm flex items-center justify-center shadow-md transition-all"
+                  className="flex-1 bg-[#FFD166] hover:bg-[#E6B84A] text-gray-900 font-black py-3 px-6 rounded-full text-sm flex items-center justify-center shadow-md transition-all"
                 >
                   <ShoppingBag className="w-4 h-4 mr-2" />
-                  Pesan Sekarang via McDelivery
+                  Pesan Sekarang via MOCHIKINelivery
                 </a>
               </div>
             </div>

@@ -10,8 +10,8 @@ export default function CareerBanner() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="order-2 md:order-1 relative aspect-[16/10] w-full rounded-2xl overflow-hidden shadow-xl border-2 border-white/50">
             <Image
-              src="https://www.mcdonalds.co.id/assets/img/career/img_carrer_static.webp"
-              alt="Karier McDonald's"
+              src="https://mochikin.id/assets/img/career/img_carrer_static.webp"
+              alt="Karier MOCHIKIN"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
@@ -23,12 +23,12 @@ export default function CareerBanner() {
               Ayo belajar dan bekerja bersama!
             </h2>
             <p className="text-gray-800 text-base sm:text-lg leading-relaxed">
-              Di McDonald&apos;s, kami lebih dari sekadar bisnis. Kami adalah komunitas tempat Anda berlatih keterampilan hidup dan sebagai wadah untuk mengejar serta mewujudkan impianmu.
+              Di MOCHIKIN&apos;s, kami lebih dari sekadar bisnis. Kami adalah komunitas tempat Anda berlatih keterampilan hidup dan sebagai wadah untuk mengejar serta mewujudkan impianmu.
             </p>
             <div className="pt-2">
               <a
                 href="#career"
-                className="inline-flex items-center justify-center bg-[#db0007] hover:bg-[#b80006] text-white font-extrabold px-8 py-3.5 rounded-full text-sm shadow-lg hover:shadow-xl transition-all"
+                className="inline-flex items-center justify-center bg-[#FF6B35] hover:bg-[#E55A2B] text-white font-extrabold px-8 py-3.5 rounded-full text-sm shadow-lg hover:shadow-xl transition-all"
               >
                 Lihat Lowongan Karier
               </a>

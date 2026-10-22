@@ -7,19 +7,19 @@ import SecurityModal from "@/components/SecurityModal";
 import FloatingOrderButton from "@/components/FloatingOrderButton";
 
 export const metadata: Metadata = {
-  title: "Home | McDonald's Indonesia",
+  title: "Home | MOCHIKIN",
   description:
-    "Nikmati menu pilihan terbaik dengan kualitas makanan yang terjamin bersama teman dan keluargamu hanya di McDonald's Indonesia.",
+    "Nikmati menu pilihan terbaik dengan kualitas makanan yang terjamin bersama teman dan keluargamu hanya di MOCHIKIN.",
   icons: {
-    icon: "https://d2vuyvo9qdtgo9.cloudfront.net/assets/ico/favicon.ico",
-    apple: "https://d2vuyvo9qdtgo9.cloudfront.net/assets/ico/apple-touch-icon.png",
+    icon: "https://placehold.co/600x400",
+    apple: "https://placehold.co/600x400",
   },
   openGraph: {
-    title: "Home | McDonald's Indonesia",
+    title: "Home | MOCHIKIN",
     description:
-      "Nikmati menu pilihan terbaik dengan kualitas makanan yang terjamin bersama teman dan keluargamu hanya di McDonald's Indonesia.",
-    url: "https://www.mcdonalds.co.id",
-    images: ["https://d2vuyvo9qdtgo9.cloudfront.net/assets/ico/richlink.jpg"],
+      "Nikmati menu pilihan terbaik dengan kualitas makanan yang terjamin bersama teman dan keluargamu hanya di MOCHIKIN.",
+    url: "https://mochikin.id",
+    images: ["https://placehold.co/600x400"],
   },
 };
 

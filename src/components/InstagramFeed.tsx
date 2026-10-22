@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { INSTAGRAM_POSTS } from "@/data/mcdData";
+import { INSTAGRAM_POSTS } from "@/data/mochikinData";
 
 export default function InstagramFeed() {
   return (
@@ -11,19 +11,19 @@ export default function InstagramFeed() {
         <div className="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4 text-center sm:text-left">
           <div>
             <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-              Instagram McDonald&apos;s Indonesia
+              Instagram MOCHIKIN&apos;s Indonesia
             </h2>
             <p className="text-red-100 text-sm mt-1">
-              Bagikan momen bahagiamu dan tag @mcdonaldsid
+              Bagikan momen bahagiamu dan tag @mochikin
             </p>
           </div>
           <a
-            href="https://www.instagram.com/mcdonaldsid"
+            href="https://www.instagram.com/mochikin"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center bg-white text-[#da291c] hover:bg-yellow-400 hover:text-gray-900 font-extrabold text-sm px-6 py-2.5 rounded-full transition-colors shadow-md"
           >
-            Ikuti @mcdonaldsid
+            Ikuti @mochikin
           </a>
         </div>
 
@@ -32,7 +32,7 @@ export default function InstagramFeed() {
           {INSTAGRAM_POSTS.map((url, i) => (
             <a
               key={i}
-              href="https://www.instagram.com/mcdonaldsid"
+              href="https://www.instagram.com/mochikin"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative aspect-square rounded-2xl overflow-hidden shadow-md bg-red-900/40"

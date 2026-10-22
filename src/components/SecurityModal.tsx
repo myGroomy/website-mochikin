@@ -8,14 +8,14 @@ export default function SecurityModal() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const seen = sessionStorage.getItem("mcd_security_alert_seen");
+    const seen = sessionStorage.getItem("mochikin_security_alert_seen");
     if (!seen) {
       setIsOpen(true);
     }
   }, []);
 
   const handleClose = () => {
-    sessionStorage.setItem("mcd_security_alert_seen", "true");
+    sessionStorage.setItem("mochikin_security_alert_seen", "true");
     setIsOpen(false);
   };
 
@@ -36,7 +36,7 @@ export default function SecurityModal() {
 
         {/* Content */}
         <div className="p-8 text-center">
-          <div className="w-16 h-16 bg-red-100 text-[#db0007] rounded-full flex items-center justify-center mx-auto mb-5 shadow-inner">
+          <div className="w-16 h-16 bg-red-100 text-[#FF6B35] rounded-full flex items-center justify-center mx-auto mb-5 shadow-inner">
             <ShieldAlert className="w-8 h-8" />
           </div>
 
@@ -46,10 +46,10 @@ export default function SecurityModal() {
 
           <div className="space-y-3 text-xs sm:text-sm text-gray-600 leading-relaxed text-left bg-gray-50 p-5 rounded-2xl border border-gray-100">
             <p>
-              Mohon untuk selalu waspada dan berhati-hati terhadap segala bentuk penipuan berkedok undian berhadiah atau lowongan kerja yang mengatasnamakan McDonald’s Indonesia.
+              Mohon untuk selalu waspada dan berhati-hati terhadap segala bentuk penipuan berkedok undian berhadiah atau lowongan kerja yang mengatasnamakan MOCHIKIN’s Indonesia.
             </p>
             <p>
-              McDonald’s Indonesia tidak bertanggung jawab atas informasi ataupun kegiatan yang dilakukan oleh pihak lain selain yang secara resmi diberikan melalui situs web dan kanal media sosial resmi McDonald’s Indonesia.
+              MOCHIKIN’s Indonesia tidak bertanggung jawab atas informasi ataupun kegiatan yang dilakukan oleh pihak lain selain yang secara resmi diberikan melalui situs web dan kanal media sosial resmi MOCHIKIN’s Indonesia.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default function SecurityModal() {
             <button
               type="button"
               onClick={handleClose}
-              className="bg-[#db0007] hover:bg-[#b80006] text-white font-extrabold text-sm px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all"
+              className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white font-extrabold text-sm px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all"
             >
               Saya Mengerti
             </button>
@@ -67,7 +67,7 @@ export default function SecurityModal() {
         {/* Graphic melt accent */}
         <div className="relative h-3 w-full bg-yellow-400">
           <Image
-            src="https://d2vuyvo9qdtgo9.cloudfront.net/assets/img/common/graphic-melt.png"
+            src="https://placehold.co/600x400"
             alt="Melt Graphic"
             fill
             sizes="100vw"

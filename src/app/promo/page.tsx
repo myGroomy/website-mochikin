@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight, Calendar, X, ExternalLink } from "lucide-react";
-import { PROMOS_DATA, Promo } from "@/data/mcdData";
+import { PROMOS_DATA, Promo } from "@/data/mochikinData";
 
 export default function PromoPage() {
   const [activeFilter, setActiveFilter] = useState<string>("all");
@@ -18,7 +18,7 @@ export default function PromoPage() {
   return (
     <div className="bg-[#fafafa] min-h-screen pb-20">
       {/* Promo Header Cover */}
-      <div className="bg-gradient-to-r from-red-600 to-[#db0007] text-white py-14 lg:py-20 relative overflow-hidden">
+      <div className="bg-gradient-to-r from-red-600 to-[#FF6B35] text-white py-14 lg:py-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex items-center space-x-2 text-xs font-semibold text-red-200 mb-3">
             <Link href="/" className="hover:text-white">
@@ -28,10 +28,10 @@ export default function PromoPage() {
             <span className="text-white font-bold">Promo</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight mb-3">
-            Promo McDonald&apos;s Indonesia
+            Promo MOCHIKIN&apos;s Indonesia
           </h1>
           <p className="text-red-100 text-sm sm:text-base max-w-xl">
-            Nikmati berbagai penawaran spesial, diskon menarik McDelivery, dan promo eksklusif aplikasi McDonald&apos;s untuk Anda.
+            Nikmati berbagai penawaran spesial, diskon menarik MOCHIKINelivery, dan promo eksklusif aplikasi MOCHIKIN&apos;s untuk Anda.
           </p>
         </div>
       </div>
@@ -51,7 +51,7 @@ export default function PromoPage() {
               onClick={() => setActiveFilter(tab.id)}
               className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-extrabold transition-all shadow-sm ${
                 activeFilter === tab.id
-                  ? "bg-[#db0007] text-white shadow-md scale-105"
+                  ? "bg-[#FF6B35] text-white shadow-md scale-105"
                   : "bg-white text-gray-700 hover:bg-gray-100 border border-gray-200"
               }`}
             >
@@ -84,7 +84,7 @@ export default function PromoPage() {
                   <span className="inline-block px-3 py-1 rounded-full text-xs font-bold text-red-700 bg-red-50 mb-3">
                     {promo.categoryLabel}
                   </span>
-                  <h3 className="font-extrabold text-gray-900 text-lg leading-snug group-hover:text-[#db0007] transition-colors line-clamp-2">
+                  <h3 className="font-extrabold text-gray-900 text-lg leading-snug group-hover:text-[#FF6B35] transition-colors line-clamp-2">
                     {promo.name}
                   </h3>
                   <p className="text-sm text-gray-500 mt-2 line-clamp-2">
@@ -93,7 +93,7 @@ export default function PromoPage() {
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs text-gray-500 font-medium">
-                  <Calendar className="w-4 h-4 mr-2 text-[#db0007]" />
+                  <Calendar className="w-4 h-4 mr-2 text-[#FF6B35]" />
                   <span>Berlaku hingga {promo.expiryDate}</span>
                 </div>
               </div>
@@ -143,7 +143,7 @@ export default function PromoPage() {
               </p>
 
               <div className="bg-gray-50 p-4 rounded-2xl border border-gray-100 flex items-center text-xs text-gray-600">
-                <Calendar className="w-4 h-4 mr-2 text-[#db0007]" />
+                <Calendar className="w-4 h-4 mr-2 text-[#FF6B35]" />
                 <span className="font-semibold">Masa Berlaku: Hingga {selectedPromo.expiryDate}</span>
               </div>
 
@@ -152,10 +152,10 @@ export default function PromoPage() {
                   href="https://smart.link/ngzf73egtu2ip"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 bg-[#ffbc0d] hover:bg-[#e5a80a] text-gray-900 font-extrabold py-3 px-6 rounded-full text-sm flex items-center justify-center shadow-md transition-all"
+                  className="flex-1 bg-[#FFD166] hover:bg-[#E6B84A] text-gray-900 font-extrabold py-3 px-6 rounded-full text-sm flex items-center justify-center shadow-md transition-all"
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />
-                  Klaim Promo di McDelivery
+                  Klaim Promo di MOCHIKINelivery
                 </a>
               </div>
             </div>

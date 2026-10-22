@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FAVORITE_MENU } from "@/data/mcdData";
+import { FAVORITE_MENU } from "@/data/mochikinData";
 
 export default function MenuSection() {
   return (
@@ -13,7 +13,7 @@ export default function MenuSection() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#2d2d2d] tracking-tight">
             Menu Favorit
           </h2>
-          <div className="w-16 h-1 bg-[#ffbc0d] mx-auto mt-3 rounded-full" />
+          <div className="w-16 h-1 bg-[#FFD166] mx-auto mt-3 rounded-full" />
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -33,7 +33,7 @@ export default function MenuSection() {
                     className="object-contain group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="font-extrabold text-gray-900 text-base group-hover:text-[#db0007] transition-colors">
+                <h3 className="font-extrabold text-gray-900 text-base group-hover:text-[#FF6B35] transition-colors">
                   {item.name}
                 </h3>
                 <span className="text-xs text-gray-400 font-medium block mt-1">
@@ -52,7 +52,7 @@ export default function MenuSection() {
         <div className="mt-12 text-center">
           <Link
             href="/menu"
-            className="inline-flex items-center justify-center bg-[#db0007] hover:bg-[#b80006] text-white font-bold px-8 py-3.5 rounded-full text-sm shadow-md hover:shadow-lg transition-all"
+            className="inline-flex items-center justify-center bg-[#FF6B35] hover:bg-[#E55A2B] text-white font-bold px-8 py-3.5 rounded-full text-sm shadow-md hover:shadow-lg transition-all"
           >
             Lihat Semua Menu
           </Link>

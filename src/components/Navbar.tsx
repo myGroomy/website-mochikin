@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu as MenuIcon, X, MapPin, ChevronDown, ChevronRight, ShoppingBag } from "lucide-react";
-import { MENU_CATEGORIES } from "@/data/mcdData";
+import { MENU_CATEGORIES } from "@/data/mochikinData";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -21,8 +21,8 @@ export default function Navbar() {
               <Link href="/" className="flex items-center group">
                 <span className="block w-14 h-12 relative flex-shrink-0">
                   <Image
-                    src="https://d2vuyvo9qdtgo9.cloudfront.net/assets/img/brand/logo_mcd.png"
-                    alt="McDonald's Indonesia"
+                    src="https://placehold.co/600x400"
+                    alt="MOCHIKIN"
                     width={56}
                     height={48}
                     className="w-14 h-12 object-contain transition-transform group-hover:scale-105"
@@ -42,10 +42,10 @@ export default function Navbar() {
               >
                 <Link
                   href="/menu"
-                  className="flex items-center px-3 py-2 rounded-md hover:text-[#db0007] transition-colors"
+                  className="flex items-center px-3 py-2 rounded-md hover:text-[#FF6B35] transition-colors"
                 >
                   Menu
-                  <ChevronDown className="ml-1 w-4 h-4 text-gray-400 group-hover:text-[#db0007]" />
+                  <ChevronDown className="ml-1 w-4 h-4 text-gray-400 group-hover:text-[#FF6B35]" />
                 </Link>
 
                 {/* Megamenu popup */}
@@ -61,7 +61,7 @@ export default function Navbar() {
                             <Link
                               key={cat}
                               href={`/menu#${encodeURIComponent(cat)}`}
-                              className="text-gray-700 hover:text-[#db0007] text-sm flex items-center font-medium transition-colors"
+                              className="text-gray-700 hover:text-[#FF6B35] text-sm flex items-center font-medium transition-colors"
                               onClick={() => setMenuDropdownOpen(false)}
                             >
                               <span className="w-1.5 h-1.5 rounded-full bg-red-600 mr-2 opacity-0 hover:opacity-100 transition-opacity" />
@@ -72,7 +72,7 @@ export default function Navbar() {
                         <div className="mt-5 pt-3 border-t border-gray-100">
                           <Link
                             href="/menu"
-                            className="text-[#db0007] font-bold text-sm inline-flex items-center hover:underline"
+                            className="text-[#FF6B35] font-bold text-sm inline-flex items-center hover:underline"
                             onClick={() => setMenuDropdownOpen(false)}
                           >
                             Lihat semua menu <ChevronRight className="w-4 h-4 ml-1" />
@@ -84,7 +84,7 @@ export default function Navbar() {
                         <div>
                           <div className="relative h-28 w-full mb-3 flex items-center justify-center">
                             <Image
-                              src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/zdp0LhOduHDNXVYWILMx.webp"
+                              src="https://placehold.co/600x400"
                               alt="PaNas 1"
                               width={160}
                               height={112}
@@ -94,12 +94,12 @@ export default function Navbar() {
                           </div>
                           <h5 className="font-bold text-gray-900 text-sm">PaNas 1</h5>
                           <p className="text-xs text-gray-500 mt-1 line-clamp-2">
-                            1 potong Ayam Krispy/Spicy McD dengan nasi hangat pulen dan Fruit Tea Lemon.
+                            1 potong Ayam Krispy/Spicy MOCHIKIN dengan nasi hangat pulen dan Fruit Tea Lemon.
                           </p>
                         </div>
                         <a
                           href="/order"
-                          className="mt-3 w-full bg-[#db0007] hover:bg-[#b80006] text-white font-bold py-2 px-3 rounded-lg text-xs flex items-center justify-center transition-colors shadow-sm"
+                          className="mt-3 w-full bg-[#FF6B35] hover:bg-[#E55A2B] text-white font-bold py-2 px-3 rounded-lg text-xs flex items-center justify-center transition-colors shadow-sm"
                         >
                           <ShoppingBag className="w-3.5 h-3.5 mr-1.5" />
                           Pesan Sekarang
@@ -113,7 +113,7 @@ export default function Navbar() {
               {/* Promo */}
               <Link
                 href="/promo"
-                className="px-3 py-2 rounded-md hover:text-[#db0007] transition-colors"
+                className="px-3 py-2 rounded-md hover:text-[#FF6B35] transition-colors"
               >
                 Promo
               </Link>
@@ -121,18 +121,18 @@ export default function Navbar() {
               {/* Aplikasi Info */}
               <a
                 href="#app-download"
-                className="px-3 py-2 rounded-md hover:text-[#db0007] transition-colors flex items-center"
+                className="px-3 py-2 rounded-md hover:text-[#FF6B35] transition-colors flex items-center"
               >
                 <span className="bg-yellow-400 text-red-950 text-[10px] font-black px-1.5 py-0.5 rounded mr-1.5">
                   APP
                 </span>
-                Aplikasi McD
+                Aplikasi MOCHIKIN
               </a>
 
               {/* Dunia Anak */}
               <Link
                 href="/#dunia-anak"
-                className="px-3 py-2 rounded-md hover:text-[#db0007] transition-colors"
+                className="px-3 py-2 rounded-md hover:text-[#FF6B35] transition-colors"
               >
                 Dunia Anak
               </Link>
@@ -145,7 +145,7 @@ export default function Navbar() {
               >
                 <button
                   type="button"
-                  className="flex items-center px-3 py-2 rounded-md hover:text-[#db0007] transition-colors text-left"
+                  className="flex items-center px-3 py-2 rounded-md hover:text-[#FF6B35] transition-colors text-left"
                 >
                   <span>Makin Kenal Makin Sayang</span>
                   <ChevronDown className="ml-1 w-4 h-4 text-gray-400" />
@@ -154,21 +154,21 @@ export default function Navbar() {
                   <div className="absolute left-0 mt-0 w-56 bg-white rounded-b-xl shadow-xl border border-gray-100 py-2 z-50 animate-slide-down">
                     <Link
                       href="/#produk-kami"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-[#db0007]"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-[#FF6B35]"
                       onClick={() => setSayangDropdownOpen(false)}
                     >
                       Produk Kami
                     </Link>
                     <Link
                       href="/#restoran-kami"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-[#db0007]"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-[#FF6B35]"
                       onClick={() => setSayangDropdownOpen(false)}
                     >
                       Restoran Kami
                     </Link>
                     <Link
                       href="/#komitmen"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-[#db0007]"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-[#FF6B35]"
                       onClick={() => setSayangDropdownOpen(false)}
                     >
                       Komitmen &amp; Tanggung Jawab
@@ -180,9 +180,9 @@ export default function Navbar() {
               {/* Lokasi */}
               <Link
                 href="/locations"
-                className="px-3 py-2 rounded-md hover:text-[#db0007] transition-colors flex items-center border-l border-gray-200 pl-4"
+                className="px-3 py-2 rounded-md hover:text-[#FF6B35] transition-colors flex items-center border-l border-gray-200 pl-4"
               >
-                <MapPin className="w-4 h-4 mr-1 text-[#db0007]" />
+                <MapPin className="w-4 h-4 mr-1 text-[#FF6B35]" />
                 Lokasi
               </Link>
             </nav>
@@ -191,12 +191,12 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center space-x-3">
               <a
                 href="/order"
-                className="bg-[#ffbc0d] hover:bg-[#e5a80a] text-gray-900 font-extrabold text-sm px-5 py-2.5 rounded-full flex items-center shadow-md hover:shadow-lg transition-all"
+                className="bg-[#FFD166] hover:bg-[#E6B84A] text-gray-900 font-extrabold text-sm px-5 py-2.5 rounded-full flex items-center shadow-md hover:shadow-lg transition-all"
               >
                 <span className="w-5 h-5 mr-2 inline-flex items-center justify-center flex-shrink-0">
                   <Image
-                    src="https://d2vuyvo9qdtgo9.cloudfront.net/assets/img/icon/ic_mcdelivery.svg"
-                    alt="McDelivery"
+                    src="https://placehold.co/600x400"
+                    alt="MOCHIKINelivery"
                     width={20}
                     height={20}
                     className="w-5 h-5 object-contain"
@@ -210,7 +210,7 @@ export default function Navbar() {
             <div className="flex items-center lg:hidden space-x-2">
               <a
                 href="/order"
-                className="bg-[#ffbc0d] text-gray-900 font-bold text-xs px-3 py-2 rounded-full flex items-center"
+                className="bg-[#FFD166] text-gray-900 font-bold text-xs px-3 py-2 rounded-full flex items-center"
               >
                 <ShoppingBag className="w-3.5 h-3.5 mr-1" />
                 Pesan
@@ -218,7 +218,7 @@ export default function Navbar() {
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 rounded-lg text-gray-700 hover:text-[#db0007] hover:bg-gray-100 focus:outline-none"
+                className="p-2 rounded-lg text-gray-700 hover:text-[#FF6B35] hover:bg-gray-100 focus:outline-none"
                 aria-label="Toggle menu"
               >
                 {mobileMenuOpen ? <X className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" />}
@@ -237,12 +237,12 @@ export default function Navbar() {
               <div className="space-y-4">
                 <a
                   href="/order"
-                  className="w-full bg-[#ffbc0d] hover:bg-[#e5a80a] text-gray-900 font-black py-3 px-4 rounded-xl flex items-center justify-center text-sm shadow mb-4"
+                  className="w-full bg-[#FFD166] hover:bg-[#E6B84A] text-gray-900 font-black py-3 px-4 rounded-xl flex items-center justify-center text-sm shadow mb-4"
                 >
                   <span className="w-5 h-5 mr-2 inline-flex items-center justify-center flex-shrink-0">
                     <Image
-                      src="https://d2vuyvo9qdtgo9.cloudfront.net/assets/img/icon/ic_mcdelivery.svg"
-                      alt="McDelivery"
+                      src="https://placehold.co/600x400"
+                      alt="MOCHIKINelivery"
                       width={20}
                       height={20}
                       className="w-5 h-5 object-contain"
@@ -254,45 +254,45 @@ export default function Navbar() {
                 <div className="border-t border-gray-100 pt-3">
                   <Link
                     href="/menu"
-                    className="block py-2.5 font-bold text-gray-800 text-lg hover:text-[#db0007]"
+                    className="block py-2.5 font-bold text-gray-800 text-lg hover:text-[#FF6B35]"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Menu
                   </Link>
                   <Link
                     href="/promo"
-                    className="block py-2.5 font-bold text-gray-800 text-lg hover:text-[#db0007]"
+                    className="block py-2.5 font-bold text-gray-800 text-lg hover:text-[#FF6B35]"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Promo
                   </Link>
                   <a
                     href="#app-download"
-                    className="block py-2.5 font-bold text-gray-800 text-lg hover:text-[#db0007]"
+                    className="block py-2.5 font-bold text-gray-800 text-lg hover:text-[#FF6B35]"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Aplikasi McDonald&apos;s
+                    Aplikasi MOCHIKIN&apos;s
                   </a>
                   <Link
                     href="/#dunia-anak"
-                    className="block py-2.5 font-bold text-gray-800 text-lg hover:text-[#db0007]"
+                    className="block py-2.5 font-bold text-gray-800 text-lg hover:text-[#FF6B35]"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Dunia Anak
                   </Link>
                   <Link
                     href="/locations"
-                    className="flex items-center py-2.5 font-bold text-gray-800 text-lg hover:text-[#db0007]"
+                    className="flex items-center py-2.5 font-bold text-gray-800 text-lg hover:text-[#FF6B35]"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    <MapPin className="w-5 h-5 mr-2 text-[#db0007]" />
+                    <MapPin className="w-5 h-5 mr-2 text-[#FF6B35]" />
                     Lokasi Restoran
                   </Link>
                 </div>
               </div>
 
               <div className="pt-6 border-t border-gray-100 text-xs text-gray-500">
-                <p>&copy; 2026 McDonald&apos;s Indonesia</p>
+                <p>&copy; 2026 MOCHIKIN&apos;s Indonesia</p>
               </div>
             </div>
           </div>

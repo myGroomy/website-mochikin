@@ -21,21 +21,21 @@ export default function HomePage() {
       {/* 3. Menu Favorit */}
       <MenuSection />
 
-      {/* 4. MyM Rewards Banner Section */}
+      {/* 4. Mochikin Rewards Banner Section */}
       <section className="relative w-full overflow-hidden bg-amber-500">
         <Link href="/promo" className="block w-full">
           <picture>
             <source
-              srcSet="https://www.mcdonalds.co.id/assets/img/mop/img_home-mop-3.webp"
+              srcSet="https://mochikin.id/assets/img/mop/img_home-mop-3.webp"
               media="(min-width: 670px)"
             />
             <source
-              srcSet="https://www.mcdonalds.co.id/assets/img/mop/img_home-mop-4.webp"
+              srcSet="https://mochikin.id/assets/img/mop/img_home-mop-4.webp"
               media="(max-width: 670px)"
             />
             <img
-              src="https://www.mcdonalds.co.id/assets/img/mop/img_home-mop-3.webp"
-              alt="MyM Rewards"
+              src="https://mochikin.id/assets/img/mop/img_home-mop-3.webp"
+              alt="Mochikin Rewards"
               className="w-full h-auto object-cover"
             />
           </picture>
@@ -45,7 +45,7 @@ export default function HomePage() {
       {/* 5. Dunia Anak / Birthday Celebration */}
       <CelebrateBanner />
 
-      {/* 6. McDonald's App Download */}
+      {/* 6. MOCHIKIN App Download */}
       <AppSection />
 
       {/* 7. Instagram Showcase */}

@@ -6,14 +6,14 @@ export default function CookieBanner() {
   const [agreed, setAgreed] = useState(true);
 
   useEffect(() => {
-    const isAgreed = localStorage.getItem("mcd_cookie_agreed");
+    const isAgreed = localStorage.getItem("mochikin_cookie_agreed");
     if (!isAgreed) {
       setAgreed(false);
     }
   }, []);
 
   const handleAgree = () => {
-    localStorage.setItem("mcd_cookie_agreed", "true");
+    localStorage.setItem("mochikin_cookie_agreed", "true");
     setAgreed(true);
   };
 
@@ -31,7 +31,7 @@ export default function CookieBanner() {
         <button
           type="button"
           onClick={handleAgree}
-          className="bg-[#db0007] hover:bg-[#b80006] text-white font-bold text-xs px-6 py-2 rounded-full transition-colors shadow-sm"
+          className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white font-bold text-xs px-6 py-2 rounded-full transition-colors shadow-sm"
         >
           Setuju
         </button>

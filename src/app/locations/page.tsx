@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ChevronRight, MapPin, Phone, Clock, Search, Navigation } from "lucide-react";
-import { RESTAURANT_LOCATIONS } from "@/data/mcdData";
+import { RESTAURANT_LOCATIONS } from "@/data/mochikinData";
 
 export default function LocationsPage() {
   const [searchCity, setSearchCity] = useState<string>("All");
@@ -11,7 +11,7 @@ export default function LocationsPage() {
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   const cities = ["All", ...Array.from(new Set(RESTAURANT_LOCATIONS.map((l) => l.city)))];
-  const allServices = ["All", "24 Jam", "Drive Thru", "McCafe", "Playland", "Wi-Fi"];
+  const allServices = ["All", "24 Jam", "Drive Thru", "Mochi Cafe", "Playland", "Wi-Fi"];
 
   const filteredLocations = RESTAURANT_LOCATIONS.filter((loc) => {
     const matchesCity = searchCity === "All" || loc.city === searchCity;
@@ -29,17 +29,17 @@ export default function LocationsPage() {
       <div className="bg-white border-b border-gray-200 py-12 lg:py-16 text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-center space-x-2 text-xs font-semibold text-gray-500 mb-3">
-            <Link href="/" className="hover:text-[#db0007]">
+            <Link href="/" className="hover:text-[#FF6B35]">
               Home
             </Link>
             <ChevronRight className="w-3.5 h-3.5" />
             <span className="text-gray-900 font-bold">Lokasi</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight mb-3">
-            Temukan McDonald&apos;s di dekatmu
+            Temukan MOCHIKIN&apos;s di dekatmu
           </h1>
           <p className="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">
-            Cari gerai McDonald&apos;s terdekat untuk dine-in santai, drive-thru cepat, atau menikmati kopi hangat di McCafé.
+            Cari gerai MOCHIKIN&apos;s terdekat untuk dine-in santai, drive-thru cepat, atau menikmati kopi hangat di Mochi Cafe.
           </p>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function LocationsPage() {
                 placeholder="Cari nama gerai atau jalan..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 text-sm bg-gray-50 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#db0007]"
+                className="w-full pl-10 pr-4 py-2.5 text-sm bg-gray-50 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF6B35]"
               />
             </div>
 
@@ -65,7 +65,7 @@ export default function LocationsPage() {
               <select
                 value={searchCity}
                 onChange={(e) => setSearchCity(e.target.value)}
-                className="w-full py-2.5 px-3 text-sm bg-gray-50 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#db0007] font-semibold text-gray-700"
+                className="w-full py-2.5 px-3 text-sm bg-gray-50 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF6B35] font-semibold text-gray-700"
               >
                 {cities.map((city) => (
                   <option key={city} value={city}>
@@ -80,7 +80,7 @@ export default function LocationsPage() {
               <select
                 value={selectedService}
                 onChange={(e) => setSelectedService(e.target.value)}
-                className="w-full py-2.5 px-3 text-sm bg-gray-50 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#db0007] font-semibold text-gray-700"
+                className="w-full py-2.5 px-3 text-sm bg-gray-50 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF6B35] font-semibold text-gray-700"
               >
                 {allServices.map((srv) => (
                   <option key={srv} value={srv}>
@@ -111,7 +111,7 @@ export default function LocationsPage() {
 
                 <div className="space-y-2 text-xs text-gray-600 mb-4">
                   <div className="flex items-start">
-                    <MapPin className="w-4 h-4 mr-2 text-[#db0007] flex-shrink-0 mt-0.5" />
+                    <MapPin className="w-4 h-4 mr-2 text-[#FF6B35] flex-shrink-0 mt-0.5" />
                     <span>{loc.address}</span>
                   </div>
                   <div className="flex items-center">
@@ -144,7 +144,7 @@ export default function LocationsPage() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-[#db0007] hover:bg-[#b80006] text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center transition-colors shadow-sm"
+                  className="w-full bg-[#FF6B35] hover:bg-[#E55A2B] text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center transition-colors shadow-sm"
                 >
                   <Navigation className="w-3.5 h-3.5 mr-1.5" />
                   Petunjuk Arah Google Maps

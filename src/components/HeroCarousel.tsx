@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { HERO_BANNERS } from "@/data/mcdData";
+import { HERO_BANNERS } from "@/data/mochikinData";
 
 export default function HeroCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -76,7 +76,7 @@ export default function HeroCarousel() {
             type="button"
             onClick={() => setCurrentIndex(idx)}
             className={`h-2.5 rounded-full transition-all duration-300 ${
-              idx === currentIndex ? "w-8 bg-[#db0007]" : "w-2.5 bg-white/80 hover:bg-white"
+              idx === currentIndex ? "w-8 bg-[#FF6B35]" : "w-2.5 bg-white/80 hover:bg-white"
             }`}
             aria-label={`Go to slide ${idx + 1}`}
           />
