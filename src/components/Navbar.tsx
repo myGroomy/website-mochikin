@@ -98,9 +98,7 @@ export default function Navbar() {
                           </p>
                         </div>
                         <a
-                          href="https://smart.link/ngzf73egtu2ip"
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          href="/order"
                           className="mt-3 w-full bg-[#db0007] hover:bg-[#b80006] text-white font-bold py-2 px-3 rounded-lg text-xs flex items-center justify-center transition-colors shadow-sm"
                         >
                           <ShoppingBag className="w-3.5 h-3.5 mr-1.5" />
@@ -192,9 +190,7 @@ export default function Navbar() {
             {/* Desktop Action Button: Pesan Sekarang */}
             <div className="hidden lg:flex items-center space-x-3">
               <a
-                href="https://smart.link/ngzf73egtu2ip"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/order"
                 className="bg-[#ffbc0d] hover:bg-[#e5a80a] text-gray-900 font-extrabold text-sm px-5 py-2.5 rounded-full flex items-center shadow-md hover:shadow-lg transition-all"
               >
                 <span className="w-5 h-5 mr-2 inline-flex items-center justify-center flex-shrink-0">
@@ -213,9 +209,7 @@ export default function Navbar() {
             {/* Mobile Hamburger Button */}
             <div className="flex items-center lg:hidden space-x-2">
               <a
-                href="https://smart.link/ngzf73egtu2ip"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/order"
                 className="bg-[#ffbc0d] text-gray-900 font-bold text-xs px-3 py-2 rounded-full flex items-center"
               >
                 <ShoppingBag className="w-3.5 h-3.5 mr-1" />
@@ -242,9 +236,7 @@ export default function Navbar() {
             >
               <div className="space-y-4">
                 <a
-                  href="https://smart.link/ngzf73egtu2ip"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/order"
                   className="w-full bg-[#ffbc0d] hover:bg-[#e5a80a] text-gray-900 font-black py-3 px-4 rounded-xl flex items-center justify-center text-sm shadow mb-4"
                 >
                   <span className="w-5 h-5 mr-2 inline-flex items-center justify-center flex-shrink-0">
