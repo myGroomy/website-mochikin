@@ -69,6 +69,13 @@ export interface Config {
   collections: {
     media: Media;
     users: User;
+    'menu-categories': MenuCategory;
+    'menu-items': MenuItem;
+    promos: Promo;
+    locations: Location;
+    news: News;
+    jobs: Job;
+    'hero-banners': HeroBanner;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -78,6 +85,13 @@ export interface Config {
   collectionsSelect: {
     media: MediaSelect<false> | MediaSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
+    'menu-categories': MenuCategoriesSelect<false> | MenuCategoriesSelect<true>;
+    'menu-items': MenuItemsSelect<false> | MenuItemsSelect<true>;
+    promos: PromosSelect<false> | PromosSelect<true>;
+    locations: LocationsSelect<false> | LocationsSelect<true>;
+    news: NewsSelect<false> | NewsSelect<true>;
+    jobs: JobsSelect<false> | JobsSelect<true>;
+    'hero-banners': HeroBannersSelect<false> | HeroBannersSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -87,8 +101,20 @@ export interface Config {
     defaultIDType: number;
   };
   fallbackLocale: null;
-  globals: {};
-  globalsSelect: {};
+  globals: {
+    'order-channels': OrderChannel;
+    'site-settings': SiteSetting;
+    'tentang-global': TentangGlobal;
+    'komitmen-global': KomitmenGlobal;
+    'karier-global': KarierGlobal;
+  };
+  globalsSelect: {
+    'order-channels': OrderChannelsSelect<false> | OrderChannelsSelect<true>;
+    'site-settings': SiteSettingsSelect<false> | SiteSettingsSelect<true>;
+    'tentang-global': TentangGlobalSelect<false> | TentangGlobalSelect<true>;
+    'komitmen-global': KomitmenGlobalSelect<false> | KomitmenGlobalSelect<true>;
+    'karier-global': KarierGlobalSelect<false> | KarierGlobalSelect<true>;
+  };
   locale: null;
   widgets: {
     collections: CollectionsWidget;
@@ -183,6 +209,142 @@ export interface User {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "menu-categories".
+ */
+export interface MenuCategory {
+  id: number;
+  name: string;
+  /**
+   * Angka kecil = tampil lebih dulu
+   */
+  order?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "menu-items".
+ */
+export interface MenuItem {
+  id: number;
+  name: string;
+  menuCategory: number | MenuCategory;
+  image: number | Media;
+  description: string;
+  price?: string | null;
+  calories?: string | null;
+  isFeatured?: boolean | null;
+  isSpicy?: boolean | null;
+  order?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "promos".
+ */
+export interface Promo {
+  id: number;
+  name: string;
+  category: 'menu' | 'kegiatan' | 'cashless';
+  image: number | Media;
+  description: string;
+  expiryDate: string;
+  /**
+   * Hanya huruf kecil dan tanda hubung, mis. weekend-deals
+   */
+  slug: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "locations".
+ */
+export interface Location {
+  id: number;
+  name: string;
+  city: string;
+  address: string;
+  phone: string;
+  hours: string;
+  services?:
+    | {
+        label: string;
+        id?: string | null;
+      }[]
+    | null;
+  order?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "news".
+ */
+export interface News {
+  id: number;
+  title: string;
+  /**
+   * Hanya huruf kecil dan tanda hubung, mis. event-korean-fest
+   */
+  slug: string;
+  category: 'Siaran Pers' | 'Promo' | 'Event' | 'CSR';
+  date: string;
+  image: number | Media;
+  excerpt: string;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "jobs".
+ */
+export interface Job {
+  id: number;
+  title: string;
+  /**
+   * Hanya huruf kecil dan tanda hubung, mis. crew-outlet-bandung
+   */
+  slug: string;
+  location: string;
+  department: 'Outlet' | 'Kitchen' | 'Marketing' | 'Corporate';
+  type: 'Full-time' | 'Part-time' | 'Magang';
+  postedDate: string;
+  description: string;
+  responsibilities?:
+    | {
+        point: string;
+        id?: string | null;
+      }[]
+    | null;
+  qualifications?:
+    | {
+        point: string;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "hero-banners".
+ */
+export interface HeroBanner {
+  id: number;
+  title: string;
+  link: string;
+  imageDesktop: number | Media;
+  imageMobile: number | Media;
+  order?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
@@ -212,6 +374,34 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'users';
         value: number | User;
+      } | null)
+    | ({
+        relationTo: 'menu-categories';
+        value: number | MenuCategory;
+      } | null)
+    | ({
+        relationTo: 'menu-items';
+        value: number | MenuItem;
+      } | null)
+    | ({
+        relationTo: 'promos';
+        value: number | Promo;
+      } | null)
+    | ({
+        relationTo: 'locations';
+        value: number | Location;
+      } | null)
+    | ({
+        relationTo: 'news';
+        value: number | News;
+      } | null)
+    | ({
+        relationTo: 'jobs';
+        value: number | Job;
+      } | null)
+    | ({
+        relationTo: 'hero-banners';
+        value: number | HeroBanner;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -323,6 +513,124 @@ export interface UsersSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "menu-categories_select".
+ */
+export interface MenuCategoriesSelect<T extends boolean = true> {
+  name?: T;
+  order?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "menu-items_select".
+ */
+export interface MenuItemsSelect<T extends boolean = true> {
+  name?: T;
+  menuCategory?: T;
+  image?: T;
+  description?: T;
+  price?: T;
+  calories?: T;
+  isFeatured?: T;
+  isSpicy?: T;
+  order?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "promos_select".
+ */
+export interface PromosSelect<T extends boolean = true> {
+  name?: T;
+  category?: T;
+  image?: T;
+  description?: T;
+  expiryDate?: T;
+  slug?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "locations_select".
+ */
+export interface LocationsSelect<T extends boolean = true> {
+  name?: T;
+  city?: T;
+  address?: T;
+  phone?: T;
+  hours?: T;
+  services?:
+    | T
+    | {
+        label?: T;
+        id?: T;
+      };
+  order?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "news_select".
+ */
+export interface NewsSelect<T extends boolean = true> {
+  title?: T;
+  slug?: T;
+  category?: T;
+  date?: T;
+  image?: T;
+  excerpt?: T;
+  body?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "jobs_select".
+ */
+export interface JobsSelect<T extends boolean = true> {
+  title?: T;
+  slug?: T;
+  location?: T;
+  department?: T;
+  type?: T;
+  postedDate?: T;
+  description?: T;
+  responsibilities?:
+    | T
+    | {
+        point?: T;
+        id?: T;
+      };
+  qualifications?:
+    | T
+    | {
+        point?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "hero-banners_select".
+ */
+export interface HeroBannersSelect<T extends boolean = true> {
+  title?: T;
+  link?: T;
+  imageDesktop?: T;
+  imageMobile?: T;
+  order?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv_select".
  */
 export interface PayloadKvSelect<T extends boolean = true> {
@@ -360,6 +668,363 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
   batch?: T;
   updatedAt?: T;
   createdAt?: T;
+}
+/**
+ * Link & nomor yang dipakai semua tombol pesan (halaman /order, /cara-pesan, tombol mengapung).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "order-channels".
+ */
+export interface OrderChannel {
+  id: number;
+  /**
+   * Contoh: 628111002000
+   */
+  whatsappNumber: string;
+  /**
+   * Otomatis terisi saat pelanggan membuka chat, mis. "Halo MOCHIKIN, saya ingin memesan..."
+   */
+  whatsappPesan?: string | null;
+  gofoodLink: string;
+  grabfoodLink: string;
+  shopeefoodLink: string;
+  /**
+   * Kosongkan/diisi # bila aplikasi belum rilis
+   */
+  appLink?: string | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * Identitas brand, kontak, sosial media, dan SEO default untuk seluruh situs.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "site-settings".
+ */
+export interface SiteSetting {
+  id: number;
+  tagline: string;
+  /**
+   * Dipakai untuk footer, metadata default, dan teks pengantar
+   */
+  deskripsi: string;
+  kontakEmail?: string | null;
+  kontakTelepon?: string | null;
+  alamatKantor?: string | null;
+  instagram?: string | null;
+  facebook?: string | null;
+  twitter?: string | null;
+  youtube?: string | null;
+  tiktok?: string | null;
+  seoTitle?: string | null;
+  seoDeskripsi?: string | null;
+  /**
+   * Untuk halaman newsroom (hubungi pers)
+   */
+  mediaKitLink?: string | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * Konten halaman /tentang: cerita, visi-misi, nilai, timeline, tim, dan filosofi logo.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tentang-global".
+ */
+export interface TentangGlobal {
+  id: number;
+  story?:
+    | {
+        paragraph: string;
+        id?: string | null;
+      }[]
+    | null;
+  storyImage?: (number | null) | Media;
+  vision?: string | null;
+  mission?:
+    | {
+        point: string;
+        id?: string | null;
+      }[]
+    | null;
+  values?:
+    | {
+        title: string;
+        description: string;
+        /**
+         * Mis. 💛 — fallback: ikon bawaan UI
+         */
+        icon?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  timeline?:
+    | {
+        year: string;
+        title: string;
+        description: string;
+        id?: string | null;
+      }[]
+    | null;
+  team?:
+    | {
+        name: string;
+        role: string;
+        photo?: (number | null) | Media;
+        id?: string | null;
+      }[]
+    | null;
+  logoPhilosophy?: string | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * Konten halaman /komitmen: pilar, langkah kualitas, sertifikasi, program komunitas, dan dampak.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "komitmen-global".
+ */
+export interface KomitmenGlobal {
+  id: number;
+  pillars?:
+    | {
+        title: string;
+        description: string;
+        /**
+         * Mis. 🥇 — fallback: ikon bawaan UI
+         */
+        icon?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  qualitySteps?:
+    | {
+        title: string;
+        description: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Catatan status ditampilkan apa adanya — jangan isi angka/klaim yang belum terverifikasi
+   */
+  certifications?:
+    | {
+        name: string;
+        note?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  communityPrograms?:
+    | {
+        title: string;
+        description: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * ⚠️ Ganti placeholder "XX" dengan angka riil yang bisa dipertanggungjawabkan
+   */
+  impactStats?:
+    | {
+        label: string;
+        value: string;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * Konten halaman /karier: benefit kerja, alur rekrutmen, FAQ, dan email HR.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "karier-global".
+ */
+export interface KarierGlobal {
+  id: number;
+  benefits?:
+    | {
+        title: string;
+        description: string;
+        id?: string | null;
+      }[]
+    | null;
+  recruitmentSteps?:
+    | {
+        label: string;
+        id?: string | null;
+      }[]
+    | null;
+  faqs?:
+    | {
+        question: string;
+        answer: string;
+        id?: string | null;
+      }[]
+    | null;
+  hrEmail?: string | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "order-channels_select".
+ */
+export interface OrderChannelsSelect<T extends boolean = true> {
+  whatsappNumber?: T;
+  whatsappPesan?: T;
+  gofoodLink?: T;
+  grabfoodLink?: T;
+  shopeefoodLink?: T;
+  appLink?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "site-settings_select".
+ */
+export interface SiteSettingsSelect<T extends boolean = true> {
+  tagline?: T;
+  deskripsi?: T;
+  kontakEmail?: T;
+  kontakTelepon?: T;
+  alamatKantor?: T;
+  instagram?: T;
+  facebook?: T;
+  twitter?: T;
+  youtube?: T;
+  tiktok?: T;
+  seoTitle?: T;
+  seoDeskripsi?: T;
+  mediaKitLink?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tentang-global_select".
+ */
+export interface TentangGlobalSelect<T extends boolean = true> {
+  story?:
+    | T
+    | {
+        paragraph?: T;
+        id?: T;
+      };
+  storyImage?: T;
+  vision?: T;
+  mission?:
+    | T
+    | {
+        point?: T;
+        id?: T;
+      };
+  values?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        icon?: T;
+        id?: T;
+      };
+  timeline?:
+    | T
+    | {
+        year?: T;
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  team?:
+    | T
+    | {
+        name?: T;
+        role?: T;
+        photo?: T;
+        id?: T;
+      };
+  logoPhilosophy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "komitmen-global_select".
+ */
+export interface KomitmenGlobalSelect<T extends boolean = true> {
+  pillars?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        icon?: T;
+        id?: T;
+      };
+  qualitySteps?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  certifications?:
+    | T
+    | {
+        name?: T;
+        note?: T;
+        id?: T;
+      };
+  communityPrograms?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  impactStats?:
+    | T
+    | {
+        label?: T;
+        value?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "karier-global_select".
+ */
+export interface KarierGlobalSelect<T extends boolean = true> {
+  benefits?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  recruitmentSteps?:
+    | T
+    | {
+        label?: T;
+        id?: T;
+      };
+  faqs?:
+    | T
+    | {
+        question?: T;
+        answer?: T;
+        id?: T;
+      };
+  hrEmail?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

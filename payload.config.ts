@@ -6,8 +6,21 @@ import { postgresAdapter } from '@payloadcms/db-postgres'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import sharp from 'sharp'
 
+import { HeroBanners } from './src/collections/HeroBanners.ts'
+import { Jobs } from './src/collections/Jobs.ts'
+import { Locations } from './src/collections/Locations.ts'
 import { Media } from './src/collections/Media.ts'
+import { MenuCategories } from './src/collections/MenuCategories.ts'
+import { MenuItems } from './src/collections/MenuItems.ts'
+import { News } from './src/collections/News.ts'
+import { Promos } from './src/collections/Promos.ts'
 import { Users } from './src/collections/Users.ts'
+
+import { KarierGlobal } from './src/globals/KarierGlobal.ts'
+import { KomitmenGlobal } from './src/globals/KomitmenGlobal.ts'
+import { OrderChannels } from './src/globals/OrderChannels.ts'
+import { SiteSettings } from './src/globals/SiteSettings.ts'
+import { TentangGlobal } from './src/globals/TentangGlobal.ts'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -30,7 +43,9 @@ export default buildConfig({
     },
   },
 
-  collections: [Media, Users],
+  collections: [Media, Users, MenuCategories, MenuItems, Promos, Locations, News, Jobs, HeroBanners],
+
+  globals: [OrderChannels, SiteSettings, TentangGlobal, KomitmenGlobal, KarierGlobal],
 
   editor: lexicalEditor(),
 
