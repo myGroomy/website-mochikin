@@ -153,21 +153,21 @@ export default function Navbar() {
                 {sayangDropdownOpen && (
                   <div className="absolute left-0 mt-0 w-56 bg-white rounded-b-xl shadow-xl border border-gray-100 py-2 z-50 animate-slide-down">
                     <Link
-                      href="/#produk-kami"
+                      href="/tentang-kami#produk-kami"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-[#FF6B35]"
                       onClick={() => setSayangDropdownOpen(false)}
                     >
                       Produk Kami
                     </Link>
                     <Link
-                      href="/#restoran-kami"
+                      href="/tentang-kami#restoran-kami"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-[#FF6B35]"
                       onClick={() => setSayangDropdownOpen(false)}
                     >
                       Restoran Kami
                     </Link>
                     <Link
-                      href="/#komitmen"
+                      href="/tentang-kami#komitmen"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-[#FF6B35]"
                       onClick={() => setSayangDropdownOpen(false)}
                     >

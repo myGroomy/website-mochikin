@@ -33,19 +33,19 @@ export default function Footer() {
               <a href="#layanan" className="hover:text-[#FF6B35] transition-colors">
                 Layanan
               </a>
-              <a href="#tentang" className="hover:text-[#FF6B35] transition-colors">
+              <a href="/tentang-kami#tentang" className="hover:text-[#FF6B35] transition-colors">
                 Tentang Kami
               </a>
               <a href="#sertifikasi" className="hover:text-[#FF6B35] transition-colors">
                 Sertifikasi &amp; Jaminan Halal
               </a>
-              <a href="#newsroom" className="hover:text-[#FF6B35] transition-colors">
+              <a href="/tentang-kami#newsroom" className="hover:text-[#FF6B35] transition-colors">
                 Newsroom
               </a>
               <a href="#csr" className="hover:text-[#FF6B35] transition-colors">
                 CSR &amp; Komitmen Sosial
               </a>
-              <a href="#karier" className="hover:text-[#FF6B35] transition-colors">
+              <a href="/tentang-kami#karier" className="hover:text-[#FF6B35] transition-colors">
                 Karier
               </a>
               <a href="#app" className="hover:text-[#FF6B35] transition-colors">
